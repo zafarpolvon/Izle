@@ -11,10 +11,18 @@
     flex-direction: row
     justify-content: space-between 
     padding-top: 50px
+    @media (max-width: 640px)
+      display: flex
+      flex-direction: column
+      text-align: center
   &__box
     display: flex
     flex-direction: column
     padding-top: 20px
+    @media (max-width: 640px)
+      padding-left: 0
+      padding-top: 0px
+      margin-bottom: 0px
   &__item
     display: flex
     flex-direction: column     
@@ -39,8 +47,25 @@
     flex-direction: row
     justify-content: center
     margin-top: 30px
+    @media (max-width: 640px)
+      justify-items: center
+      justify-content: center
+
   &__android
     margin-left: 30px
+    @media (max-width: 640px)
+      margin-left: 10px
+      display: flex
+      align-self: end
+      img
+        width: 60%
+        
+  &__apple
+    @media (max-width: 640px)
+      display: flex
+      justify-content: flex-end
+      img
+        width: 60%
   &__social
     display: flex
     flex-direction: row
@@ -59,11 +84,17 @@
     text-decoration: none
     margin: 0 8px
     color: #ffffff
+    
     &:hover
       background: #038992
     i
       text-align: center
       font-size: 26px
+    @media (max-width: 640px)
+      width: 40px
+      height: 40px
+      i
+        font-size: 22px
   &__make
     text-align: center
     p
@@ -73,3 +104,5 @@
       font-size: 18px
       line-height: 22px
       color: #616161
+      @media (max-width: 640px)
+        font-size: 14px

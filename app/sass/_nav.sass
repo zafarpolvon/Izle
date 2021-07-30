@@ -35,6 +35,8 @@
       
   &__logo
     padding-top: 15px
+    @media (max-width: 640px)
+      padding: 10px 0
   &__last
     padding-top: 25px
   &__input
@@ -50,6 +52,8 @@
     transition-duration: 2s
     transition-timing-function: linear
     transition-delay: 1s
+    @media (max-width: 640px)
+      font-size: 20px
     &:hover
       color: #038992
   &__select
@@ -61,6 +65,7 @@
     font-size: 20px
     line-height: 24px
     color: #616161
+    
 
 .search
   margin-top: 50px
@@ -91,7 +96,10 @@
       font-size: 24px
       line-height: 29px
       color: rgba(97, 97, 97, 0.8)
-
+      @media (max-width: 768px)
+        font-size: 15px !important
+        width: 100%
+        padding: 5px
   &__second
     display: flex
     border: 1.2px solid #038992
@@ -107,8 +115,14 @@
       font-size: 24px
       line-height: 29px
       color: rgba(97, 97, 97, 0.8)
+    @media (max-width: 768px)
+      display: none
+      & input
+        font-size: 18px
   &__icon
     padding: 5px
+    @media (max-width: 768px)
+      padding: 0
   &__button
     margin-left: 5px
     padding: 0 25px
@@ -130,6 +144,12 @@
       border: 2px solid #038992
       background: #fff
       color: #038992
+    @media (max-width: 768px)
+      margin: 0
+      padding: 0 15px
+      border-top-left-radius: 0
+      border-bottom-left-radius: 0
+      font-size: 18px
   &__item
     font-family: 'Lato', sans-serif 
     font-style: normal
