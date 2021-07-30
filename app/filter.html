@@ -27,16 +27,16 @@
     <header class="header">
       <div class="wrapper">
         <div class="header__main">
-          <a class="nav__logo" href="">
+          <a class="nav__logo" href="index.html">
             <img src="./images/src/image_4-removebg-preview 1.png" alt="" />
           </a>
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="#">Главная</a>
+                <a class="nav__link" href="index.html">Главная</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">Категории</a>
+                <a class="nav__link" href="filter.html">Категории</a>
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="#">Тарифы</a>
@@ -77,21 +77,33 @@
           </div>
           <button class="search__button">Поиск</button>
         </div>
-        <!-- <div class="search__select">
-          <div class="form__checkbox">
-            <input class="form__input" type="checkbox" id="checkbox1" />
-            <label class="form__span" for="checkbox1">Shawn Carter</label>
-          </div>
-          <div class="form__checkbox">
-            <input
-              class="form__input"
-              type="checkbox"
-              id="checkbox2"
-              checked="checked"
-            />
-            <label class="form__span" for="checkbox2">Beyonce Knowles</label>
-          </div>
-        </div> -->
+        <div class="search__select">
+          <ul class="search__box">
+            <li class="search__item">
+              <input
+                class="search__checkbox"
+                id="styled-checkbox-1"
+                type="checkbox"
+                value="value1"
+              />
+              <label class="search__checkitem" for="styled-checkbox-1"
+                >Искать в тексте объявлений</label
+              >
+            </li>
+            <li class="search__item">
+              <input
+                class="search__checkbox"
+                id="styled-checkbox-2"
+                type="checkbox"
+                value="value2"
+                checked
+              />
+              <label class="search__checkitem" for="styled-checkbox-2"
+                >Искать только с фото</label
+              >
+            </li>
+          </ul>
+        </div>
         <div class="filter">
           <div class="filter__par">
             <h3>Фильтры</h3>
@@ -102,20 +114,20 @@
             <a class="filter__link" href="#">Продажа детской одежды</a>
           </div>
         </div>
-        <div>
-          <div>
-            <div>
-              <h5>Рубрика</h5>
+        <div class="sec__select">
+          <div class="select__main">
+            <div class="select__ref">
+              <h5 class="select__text">Рубрика</h5>
             </div>
             <div class="select__box">
-              <select class="select__select" name="" id="">
+              <select class="select__select first" name="" id="">
                 <option
                   class="select__item"
                   value=""
                   disabled="disabled"
                   selected="selected"
                 >
-                  Выбор
+                  Детская одежда
                 </option>
                 <option class="select__item">Test</option>
                 <option class="select__item">Test</option>
@@ -124,304 +136,996 @@
               </select>
             </div>
           </div>
-          <h1 class="title">Pure CSS Custom Checkboxes</h1>
 
-          <ul class="unstyled centered">
-            <li>
+          <div class="select__main">
+            <div class="select__ref">
+              <h5 class="select__text">Тип одежды</h5>
+            </div>
+            <div class="select__box">
+              <select class="select__select second" name="" id="">
+                <option
+                  class="select__item"
+                  value=""
+                  disabled="disabled"
+                  selected="selected"
+                >
+                  Все
+                </option>
+                <option class="select__item">Test</option>
+                <option class="select__item">Test</option>
+                <option class="select__item">Test</option>
+                <option class="select__item">Test</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="select__main">
+            <div class="select__ref">
+              <h5 class="select__text">Состояние</h5>
+            </div>
+            <div class="select__box">
               <input
-                class="styled-checkbox"
-                id="styled-checkbox-1"
-                type="checkbox"
-                value="value1"
+                placeholder="Все"
+                class="select__select second"
+                type="text"
+                name="city"
+                list="cityname"
               />
-              <label for="styled-checkbox-1">Checkbox</label>
-            </li>
-            <li>
+              <datalist id="cityname">
+                <option class="select__item" value="Test"></option>
+                <option class="select__item" value="Test"></option>
+              </datalist>
+            </div>
+          </div>
+          <div class="select__main">
+            <div class="select__ref">
+              <h5 class="select__text">Цена</h5>
+            </div>
+            <div class="select__box">
               <input
-                class="styled-checkbox"
-                id="styled-checkbox-2"
-                type="checkbox"
-                value="value2"
-                checked
+                placeholder="От"
+                type="number"
+                class="select__select third"
               />
-              <label for="styled-checkbox-2">CSS Only</label>
-            </li>
-            <li>
               <input
-                class="styled-checkbox"
-                id="styled-checkbox-3"
-                type="checkbox"
-                value="value3"
-                disabled
+                placeholder="До"
+                type="number"
+                class="select__select third"
               />
-              <label for="styled-checkbox-3">A disabled checkbox</label>
-            </li>
-            <li>
+            </div>
+          </div>
+          <div class="select__main">
+            <div class="select__ref">
+              <h5 class="select__text">Размер</h5>
+            </div>
+            <div class="select__box">
               <input
-                class="styled-checkbox"
-                id="styled-checkbox-4"
-                type="checkbox"
-                value="value4"
+                placeholder="От"
+                type="number"
+                class="select__select third"
               />
-              <label for="styled-checkbox-4">Fourth option</label>
-            </li>
-          </ul>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+              <input
+                placeholder="До"
+                type="number"
+                class="select__select third"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="sec__sort">
+          <div class="sort__header">
+            <a class="sort__active" href="#">Все</a>
+            <a class="" href="#">Частные</a>
+            <a class="" href="#">Бизнес</a>
+          </div>
+          <div class="sort__main">
+            <h5 class="sort__sort">Сортировка</h5>
+            <div class="sort__box">
+              <select class="select__select first" name="" id="">
+                <option
+                  class="select__item"
+                  value=""
+                  disabled="disabled"
+                  selected="selected"
+                >
+                  Самые новые
+                </option>
+                <option class="select__item">Test</option>
+                <option class="select__item">Test</option>
+                <option class="select__item">Test</option>
+                <option class="select__item">Test</option>
+              </select>
+              <div class="sort__info">
+                <h5>Одежда для мальчиков</h5>
+                <p>5 135</p>
+              </div>
+              <div class="sort__info">
+                <h5>Одежда для девочек</h5>
+                <p>5 135</p>
+              </div>
+              <div class="sort__info">
+                <h5>Одежда для новорожденных</h5>
+                <p>5 135</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="cards">
       <div class="wrapper">
-        <h2 class="cards__header">Объявления</h2>
+        <div class="ads__first">
+          <a href="#">
+            <img src="./images/src/ads1.png" alt="" />
+          </a>
+        </div>
+        <h2 class="cards__header">Премиум объявления</h2>
 
-        <div class="cards__box">
-          <div class="card">
-            <div class="card__status">Премиум</div>
-            <img class="card__image" src="./images/src/image1.png" alt="" />
-            <div class="card__padding">
-              <h4 class="card__text">
-                Стенка в гостинную Hyper коричневый ЛДСП
-              </h4>
-              <div class="card__list">
-                <div class="card__info">
-                  <img src="./svg/location.svg" alt="" />
-                  <h5>Ташкент, Мирзо-Улугбекский район</h5>
-                </div>
-                <div class="card__info">
-                  <img src="./svg/clock.svg" alt="" />
-                  <h5>Сегодня 11:25</h5>
-                </div>
-                <div class="card__info">
-                  <img src="./svg/tag.svg" alt="" />
-                  <h5>90 500 000 сум</h5>
+        <div class="premium">
+          <div class="premium__first">
+            <div class="cards__box">
+              <div class="filder__card">
+                <div class="card__status">Премиум</div>
+                <img class="card__image" src="./images/src/image1.png" alt="" />
+                <div class="card__padding">
+                  <h4 class="card__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="card__info">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="card__link" href="#">Подробнее</a>
+                    <a class="card__hover" href="#">Избранное</a>
+                  </div>
                 </div>
               </div>
-              <div class="card__button">
-                <a class="card__link" href="#">Подробнее</a>
-                <a class="card__hover" href="#">Избранное</a>
+              <div class="filder__card">
+                <div class="card__status">Премиум</div>
+                <img class="card__image" src="./images/src/image1.png" alt="" />
+                <div class="card__padding">
+                  <h4 class="card__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="card__info">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="card__link" href="#">Подробнее</a>
+                    <a class="card__hover" href="#">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="filder__card">
+                <div class="card__status">Премиум</div>
+                <img class="card__image" src="./images/src/image1.png" alt="" />
+                <div class="card__padding">
+                  <h4 class="card__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="card__info">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="card__link" href="#">Подробнее</a>
+                    <a class="card__hover" href="#">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="filder__card">
+                <div class="card__status">Премиум</div>
+                <img class="card__image" src="./images/src/image1.png" alt="" />
+                <div class="card__padding">
+                  <h4 class="card__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="card__info">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="card__link" href="#">Подробнее</a>
+                    <a class="card__hover" href="#">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="filder__card">
+                <div class="card__status">Премиум</div>
+                <img class="card__image" src="./images/src/image1.png" alt="" />
+                <div class="card__padding">
+                  <h4 class="card__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="card__info">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="card__link" href="#">Подробнее</a>
+                    <a class="card__hover" href="#">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="filder__card">
+                <div class="card__status">Премиум</div>
+                <img class="card__image" src="./images/src/image1.png" alt="" />
+                <div class="card__padding">
+                  <h4 class="card__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="card__info">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="card__link" href="#">Подробнее</a>
+                    <a class="card__hover" href="#">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="filder__card">
+                <div class="card__status">Премиум</div>
+                <img class="card__image" src="./images/src/image1.png" alt="" />
+                <div class="card__padding">
+                  <h4 class="card__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="card__info">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="card__link" href="#">Подробнее</a>
+                    <a class="card__hover" href="#">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="filder__card">
+                <div class="card__status">Премиум</div>
+                <img class="card__image" src="./images/src/image1.png" alt="" />
+                <div class="card__padding">
+                  <h4 class="card__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="card__info">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="card__link" href="#">Подробнее</a>
+                    <a class="card__hover" href="#">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="filder__card">
+                <div class="card__status">Премиум</div>
+                <img class="card__image" src="./images/src/image1.png" alt="" />
+                <div class="card__padding">
+                  <h4 class="card__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="card__info">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="card__link" href="#">Подробнее</a>
+                    <a class="card__hover" href="#">Избранное</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="card__status">Премиум</div>
-            <img class="card__image" src="./images/src/image1.png" alt="" />
-            <div class="card__padding">
-              <h4 class="card__text">
-                Стенка в гостинную Hyper коричневый ЛДСП
-              </h4>
-              <div class="card__list">
-                <div class="card__info">
-                  <img src="./svg/location.svg" alt="" />
-                  <h5>Ташкент, Мирзо-Улугбекский район</h5>
-                </div>
-                <div class="card__info">
-                  <img src="./svg/clock.svg" alt="" />
-                  <h5>Сегодня 11:25</h5>
-                </div>
-                <div class="card__info">
-                  <img src="./svg/tag.svg" alt="" />
-                  <h5>90 500 000 сум</h5>
-                </div>
-              </div>
-              <div class="card__button">
-                <a class="card__link" href="#">Подробнее</a>
-                <a class="card__hover" href="#">Избранное</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__status">Премиум</div>
-            <img class="card__image" src="./images/src/image1.png" alt="" />
-            <div class="card__padding">
-              <h4 class="card__text">
-                Стенка в гостинную Hyper коричневый ЛДСП
-              </h4>
-              <div class="card__list">
-                <div class="card__info">
-                  <img src="./svg/location.svg" alt="" />
-                  <h5>Ташкент, Мирзо-Улугбекский район</h5>
-                </div>
-                <div class="card__info">
-                  <img src="./svg/clock.svg" alt="" />
-                  <h5>Сегодня 11:25</h5>
-                </div>
-                <div class="card__info">
-                  <img src="./svg/tag.svg" alt="" />
-                  <h5>90 500 000 сум</h5>
-                </div>
-              </div>
-              <div class="card__button">
-                <a class="card__link" href="#">Подробнее</a>
-                <a class="card__hover" href="#">Избранное</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__status__top">Топ</div>
-            <img class="card__image" src="./images/src/image1.png" alt="" />
-            <div class="card__padding">
-              <h4 class="card__text">
-                Стенка в гостинную Hyper коричневый ЛДСП
-              </h4>
-              <div class="card__list">
-                <div class="card__info">
-                  <img src="./svg/location.svg" alt="" />
-                  <h5>Ташкент, Мирзо-Улугбекский район</h5>
-                </div>
-                <div class="card__info">
-                  <img src="./svg/clock.svg" alt="" />
-                  <h5>Сегодня 11:25</h5>
-                </div>
-                <div class="card__info">
-                  <img src="./svg/tag.svg" alt="" />
-                  <h5>90 500 000 сум</h5>
-                </div>
-              </div>
-              <div class="card__button">
-                <a class="card__link" href="#">Подробнее</a>
-                <a class="card__hover" href="#">Избранное</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__status__top">Топ</div>
-            <img class="card__image" src="./images/src/image1.png" alt="" />
-            <div class="card__padding">
-              <h4 class="card__text">
-                Стенка в гостинную Hyper коричневый ЛДСП
-              </h4>
-              <div class="card__list">
-                <div class="card__info">
-                  <img src="./svg/location.svg" alt="" />
-                  <h5>Ташкент, Мирзо-Улугбекский район</h5>
-                </div>
-                <div class="card__info">
-                  <img src="./svg/clock.svg" alt="" />
-                  <h5>Сегодня 11:25</h5>
-                </div>
-                <div class="card__info">
-                  <img src="./svg/tag.svg" alt="" />
-                  <h5>90 500 000 сум</h5>
-                </div>
-              </div>
-              <div class="card__button">
-                <a class="card__link" href="#">Подробнее</a>
-                <a class="card__hover" href="#">Избранное</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__status__top">Топ</div>
-            <img class="card__image" src="./images/src/image1.png" alt="" />
-            <div class="card__padding">
-              <h4 class="card__text">
-                Стенка в гостинную Hyper коричневый ЛДСП
-              </h4>
-              <div class="card__list">
-                <div class="card__info">
-                  <img src="./svg/location.svg" alt="" />
-                  <h5>Ташкент, Мирзо-Улугбекский район</h5>
-                </div>
-                <div class="card__info">
-                  <img src="./svg/clock.svg" alt="" />
-                  <h5>Сегодня 11:25</h5>
-                </div>
-                <div class="card__info">
-                  <img src="./svg/tag.svg" alt="" />
-                  <h5>90 500 000 сум</h5>
-                </div>
-              </div>
-              <div class="card__button">
-                <a class="card__link" href="#">Подробнее</a>
-                <a class="card__hover" href="#">Избранное</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card__image" src="./images/src/image1.png" alt="" />
-            <div class="card__padding">
-              <h4 class="card__text">
-                Стенка в гостинную Hyper коричневый ЛДСП
-              </h4>
-              <div class="card__list">
-                <div class="card__info">
-                  <img src="./svg/location.svg" alt="" />
-                  <h5>Ташкент, Мирзо-Улугбекский район</h5>
-                </div>
-                <div class="card__info">
-                  <img src="./svg/clock.svg" alt="" />
-                  <h5>Сегодня 11:25</h5>
-                </div>
-                <div class="card__info">
-                  <img src="./svg/tag.svg" alt="" />
-                  <h5>90 500 000 сум</h5>
-                </div>
-              </div>
-              <div class="card__button">
-                <a class="card__link" href="#">Подробнее</a>
-                <a class="card__hover" href="#">Избранное</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card__image" src="./images/src/image1.png" alt="" />
-            <div class="card__padding">
-              <h4 class="card__text">
-                Стенка в гостинную Hyper коричневый ЛДСП
-              </h4>
-              <div class="card__list">
-                <div class="card__info">
-                  <img src="./svg/location.svg" alt="" />
-                  <h5>Ташкент, Мирзо-Улугбекский район</h5>
-                </div>
-                <div class="card__info">
-                  <img src="./svg/clock.svg" alt="" />
-                  <h5>Сегодня 11:25</h5>
-                </div>
-                <div class="card__info">
-                  <img src="./svg/tag.svg" alt="" />
-                  <h5>90 500 000 сум</h5>
-                </div>
-              </div>
-              <div class="card__button">
-                <a class="card__link" href="#">Подробнее</a>
-                <a class="card__hover" href="#">Избранное</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card__image" src="./images/src/image1.png" alt="" />
-            <div class="card__padding">
-              <h4 class="card__text">
-                Стенка в гостинную Hyper коричневый ЛДСП
-              </h4>
-              <div class="card__list">
-                <div class="card__info">
-                  <img src="./svg/location.svg" alt="" />
-                  <h5>Ташкент, Мирзо-Улугбекский район</h5>
-                </div>
-                <div class="card__info">
-                  <img src="./svg/clock.svg" alt="" />
-                  <h5>Сегодня 11:25</h5>
-                </div>
-                <div class="card__info">
-                  <img src="./svg/tag.svg" alt="" />
-                  <h5>90 500 000 сум</h5>
-                </div>
-              </div>
-              <div class="card__button">
-                <a class="card__link" href="#">Подробнее</a>
-                <a class="card__hover" href="#">Избранное</a>
-              </div>
-            </div>
+          <div class="premium__second">
+            <img src="./images/src/ads2.png" alt="" srcset="" />
           </div>
         </div>
-        <div class="cards__show">
-          <button class="cards__button">Посмотреть все</button>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="wrapper">
+        <div class="ads__first">
+          <a href="#">
+            <img src="./images/src/ads1.png" alt="" />
+          </a>
+        </div>
+        <h2 class="cards__header">Топ объявления</h2>
+
+        <div class="premium">
+          <div class="premium__first">
+            <div class="cards__box">
+              <div class="filder__card">
+                <div class="card__status__top">Топ</div>
+                <img
+                  class="card__image"
+                  src="./images/src/imagedress.png"
+                  alt=""
+                />
+                <div class="card__padding">
+                  <h4 class="card__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="card__info">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="card__link" href="#">Подробнее</a>
+                    <a class="card__hover" href="#">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="filder__card">
+                <div class="card__status__top">Топ</div>
+                <img
+                  class="card__image"
+                  src="./images/src/imagedress.png"
+                  alt=""
+                />
+                <div class="card__padding">
+                  <h4 class="card__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="card__info">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="card__link" href="#">Подробнее</a>
+                    <a class="card__hover" href="#">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="filder__card">
+                <div class="card__status__top">Топ</div>
+                <img
+                  class="card__image"
+                  src="./images/src/imagedress.png"
+                  alt=""
+                />
+                <div class="card__padding">
+                  <h4 class="card__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="card__info">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="card__link" href="#">Подробнее</a>
+                    <a class="card__hover" href="#">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="filder__card">
+                <div class="card__status__top">Топ</div>
+                <img
+                  class="card__image"
+                  src="./images/src/imagedress.png"
+                  alt=""
+                />
+                <div class="card__padding">
+                  <h4 class="card__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="card__info">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="card__link" href="#">Подробнее</a>
+                    <a class="card__hover" href="#">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="filder__card">
+                <div class="card__status__top">Топ</div>
+                <img
+                  class="card__image"
+                  src="./images/src/imagedress.png"
+                  alt=""
+                />
+                <div class="card__padding">
+                  <h4 class="card__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="card__info">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="card__link" href="#">Подробнее</a>
+                    <a class="card__hover" href="#">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="filder__card">
+                <div class="card__status__top">Топ</div>
+                <img
+                  class="card__image"
+                  src="./images/src/imagedress.png"
+                  alt=""
+                />
+                <div class="card__padding">
+                  <h4 class="card__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="card__info">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="card__link" href="#">Подробнее</a>
+                    <a class="card__hover" href="#">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="filder__card">
+                <div class="card__status__top">Топ</div>
+                <img
+                  class="card__image"
+                  src="./images/src/imagedress.png"
+                  alt=""
+                />
+                <div class="card__padding">
+                  <h4 class="card__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="card__info">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="card__link" href="#">Подробнее</a>
+                    <a class="card__hover" href="#">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="filder__card">
+                <div class="card__status__top">Топ</div>
+                <img
+                  class="card__image"
+                  src="./images/src/imagedress.png"
+                  alt=""
+                />
+                <div class="card__padding">
+                  <h4 class="card__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="card__info">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="card__link" href="#">Подробнее</a>
+                    <a class="card__hover" href="#">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="filder__card">
+                <div class="card__status__top">Топ</div>
+                <img
+                  class="card__image"
+                  src="./images/src/imagedress.png"
+                  alt=""
+                />
+                <div class="card__padding">
+                  <h4 class="card__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="card__info">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="card__link" href="#">Подробнее</a>
+                    <a class="card__hover" href="#">Избранное</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="premium__second"></div>
+        </div>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="wrapper">
+        <div class="ads__first">
+          <a href="#">
+            <img src="./images/src/ads1.png" alt="" />
+          </a>
+        </div>
+        <h2 class="cards__header">Обычные объявления</h2>
+
+        <div class="premium">
+          <div class="premium__first">
+            <div class="cards__box">
+              <div class="filder__card">
+                <img
+                  class="card__image"
+                  src="./images/src/imagedress.png"
+                  alt=""
+                />
+                <div class="card__padding">
+                  <h4 class="card__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="card__info">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="card__link" href="#">Подробнее</a>
+                    <a class="card__hover" href="#">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="filder__card">
+                <img
+                  class="card__image"
+                  src="./images/src/imagedress.png"
+                  alt=""
+                />
+                <div class="card__padding">
+                  <h4 class="card__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="card__info">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="card__link" href="#">Подробнее</a>
+                    <a class="card__hover" href="#">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="filder__card">
+                <img
+                  class="card__image"
+                  src="./images/src/imagedress.png"
+                  alt=""
+                />
+                <div class="card__padding">
+                  <h4 class="card__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="card__info">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="card__link" href="#">Подробнее</a>
+                    <a class="card__hover" href="#">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="filder__card">
+                <img
+                  class="card__image"
+                  src="./images/src/imagedress.png"
+                  alt=""
+                />
+                <div class="card__padding">
+                  <h4 class="card__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="card__info">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="card__link" href="#">Подробнее</a>
+                    <a class="card__hover" href="#">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="filder__card">
+                <img
+                  class="card__image"
+                  src="./images/src/imagedress.png"
+                  alt=""
+                />
+                <div class="card__padding">
+                  <h4 class="card__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="card__info">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="card__link" href="#">Подробнее</a>
+                    <a class="card__hover" href="#">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="filder__card">
+                <img
+                  class="card__image"
+                  src="./images/src/imagedress.png"
+                  alt=""
+                />
+                <div class="card__padding">
+                  <h4 class="card__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="card__info">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="card__link" href="#">Подробнее</a>
+                    <a class="card__hover" href="#">Избранное</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="premium__second"></div>
+        </div>
+      </div>
+    </div>
+    <div class="sec__pagination">
+      <div class="wrapper">
+        <div class="pagination__box">
+          <ul class="pagination">
+            <li class="pageNumber active"><a href="#">1</a></li>
+            <li class="pageNumber"><a href="#">2</a></li>
+            <li class="pageNumber"><a href="#">3</a></li>
+            <li class="pageNumber"><a href="#">4</a></li>
+            <li class="pageNumber"><a href="#">5</a></li>
+            <li class="pageNumber"><a href="#">6</a></li>
+            <li>
+              <a href="#" class="next"
+                ><i class="fas fa-long-arrow-alt-right"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="wrapper">
+        <div class="ads__first">
+          <a href="#">
+            <img src="./images/src/ads1.png" alt="" />
+          </a>
+        </div>
+        <h2 class="cards__header">Недавно просмотренные</h2>
+
+        <div class="premium">
+          <div class="premium__first">
+            <div class="cards__box">
+              <div class="filder__card">
+                <div class="card__status__top">Топ</div>
+                <img class="card__image" src="./images/src/image7.png" alt="" />
+                <div class="card__padding">
+                  <h4 class="card__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="card__info">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="card__link" href="#">Подробнее</a>
+                    <a class="card__hover" href="#">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="filder__card">
+                <div class="card__status__top">Топ</div>
+                <img class="card__image" src="./images/src/image7.png" alt="" />
+                <div class="card__padding">
+                  <h4 class="card__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="card__info">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="card__link" href="#">Подробнее</a>
+                    <a class="card__hover" href="#">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="filder__card">
+                <div class="card__status__top">Топ</div>
+                <img class="card__image" src="./images/src/image7.png" alt="" />
+                <div class="card__padding">
+                  <h4 class="card__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="card__info">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="card__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="card__link" href="#">Подробнее</a>
+                    <a class="card__hover" href="#">Избранное</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="premium__second"></div>
         </div>
       </div>
     </div>

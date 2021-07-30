@@ -26,7 +26,14 @@
     line-height: 22px
     color: #616161
     text-decoration: none
-    margin: 5px 0
+    margin: 5px 
+    transition-property: width
+    transition-duration: 2s
+    transition-timing-function: linear
+    transition-delay: 1s
+    &:hover
+      color: #038992
+      text-decoration: underline
   &__second
     display: flex
     flex-direction: row
