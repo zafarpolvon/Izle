@@ -6,6 +6,9 @@
   justify-content: space-between
 
 .nav
+  display: block
+  @media (max-width: 640px) 
+    display: none 
   &__list
     display: flex
     flex-direction: row
@@ -326,3 +329,4 @@
       font-size: 18px
       line-height: 22px
       color: rgba(127, 128, 127, 0.8)
+
