@@ -65,8 +65,6 @@
     font-size: 20px
     line-height: 24px
     color: #616161
-    
-
 .search
   margin-top: 50px
   margin-bottom: 50px
@@ -158,8 +156,13 @@
     line-height: 29px
     color: #7F807F
     margin-right: 40px
+    @media (max-width: 768px)
+      font-size: 16px
+    
   &__select
     margin-left: 78px
+    @media (max-width: 768px)
+      margin-left: 0
 .filter
   display: flex
   flex-direction: column
@@ -172,6 +175,9 @@
     line-height: 58px
     color: #616161
     margin-top: 40px
+    @media (max-width: 768px)
+      font-size: 36px
+      line-height: 40px
     h3
       margin: 0
   &__header
@@ -188,6 +194,8 @@
 .select
   &__main
     margin-right: 15px
+    @media (max-width: 768px)
+      margin-right: 0px
     &:nth-child(5)
       margin-right: 0px
   &__select
@@ -206,6 +214,8 @@
     padding: 0 10px
     font-size: inherit
     appearance: none
+    @media (max-width: 768px)
+      width: 100% !important
   &__box
     display: flex
   &__item
@@ -218,6 +228,9 @@
   &__ref
     margin-top: 50px
     margin-bottom: 20px
+    @media (max-width: 768px)
+      margin-top: 10px
+      margin-bottom: 10px
   &__text
     font-family: 'Lato', sans-serif 
     font-style: normal
@@ -236,9 +249,15 @@
 .sec__select
   display: flex
   flex-direction: row
+  @media (max-width: 768px)
+    flex-direction: column
 .search__checkbox
   position: absolute // take it out of document flow
   opacity: 0 // hide it
+
+  @media (max-width: 768px)
+    font-size: 16px
+
 
   & + label 
     position: relative
@@ -257,7 +276,9 @@
     border: 1px solid #038992
     box-sizing: border-box
     border-radius: 5px
-  
+    @media (max-width: 768px)
+      width: 20px
+      height: 20px
   // Box hover
   &:hover + label:before 
     background: #038992
@@ -291,9 +312,17 @@
     height: 4px
     box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white
     transform: rotate(45deg)
+    @media (max-width: 768px)
+      width: 2px
+      height: 2px
+      left: 5px
+      top: 13px
 .search__box 
   display: flex
   flex-direction: row
+  @media (max-width: 768px)
+    flex-direction: column
+    padding: 0 5px
   li 
     display: flex
     flex-direction: row
@@ -322,6 +351,8 @@
   &__box
     display: flex
     flex-direction: row
+    @media (max-width: 768px)
+      flex-direction: column
   &__sort
     font-family: 'Lato', sans-serif 
     font-style: normal
@@ -334,6 +365,10 @@
   &__info
     margin-left: 30px
     text-align: center
+    @media (max-width: 768px)
+      text-align: left
+      margin-left: 0
+      margin-top: 5px
     h5
       margin: 0
       font-style: normal
