@@ -29,7 +29,7 @@
   </head>
 
   <body>
-    <div>
+    <div class="card__bacground">
       <header class="header">
         <div class="wrapper">
           <div class="header__main">
@@ -147,7 +147,7 @@
         <div class="wrapper">
           <div class="about">
             <div class="white__info">
-              <h5>Пользователь</h5>
+              <h5 class="white__title">Пользователь</h5>
               <div class="about__user">
                 <div class="user__img">
                   <img src="./images/src/user (1) 1.png" alt="" />
@@ -157,29 +157,245 @@
                   <p>был(а) вчера 19:35</p>
                 </div>
               </div>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
-              <div>
-                <div>
-                  <a href="#">
+              <textarea
+                class="user__message"
+                placeholder="Напишите сообщения"
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+              ></textarea>
+              <div class="user__contact">
+                <div class="user__item">
+                  <a class="user__link" href="#">
                     <img src="./svg/call.svg" alt="" />
-                    +998(90) 123-45-67
+                    <span class="user__number" cla>+998(90) 123-45-67</span>
                   </a>
                 </div>
-                <div>
+                <div class="user__send">
                   <a href="#">Отправить</a>
                 </div>
               </div>
               <div class="about__user">
-                <div>
+                <div class="user__file">
                   <img for="file-input" src="./svg/file.svg" alt="" />
                 </div>
-                <div>
+                <div class="user__file__name">
                   <h6>Объединить файл</h6>
                   <p>Вы можете прикрепить файлы в формате: jpg, png, jpeg</p>
                 </div>
               </div>
             </div>
-            <div class="white__info"></div>
+            <div class="white__info">
+              <h5 class="user__location">Местоположения</h5>
+              <a class="location__name" href="#">
+                <i class="fas fa-map-marker-alt"></i>
+                г.Ташкент Шайхантахурский район
+              </a>
+              <img class="location__image" src="./images/src/map.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="wrapper">
+          <h2 class="cards__header">Все объявления автора</h2>
+
+          <div class="cards__box">
+            <div class="card">
+              <div class="card__status">Премиум</div>
+              <img class="card__image" src="./images/src/image1.png" alt="" />
+              <div class="card__padding">
+                <h4 class="card__text">
+                  Стенка в гостинную Hyper коричневый ЛДСП
+                </h4>
+                <div class="card__list">
+                  <div class="card__info phone">
+                    <img src="./svg/location.svg" alt="" />
+                    <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                  </div>
+                  <div class="card__info phone">
+                    <img src="./svg/clock.svg" alt="" />
+                    <h5>Сегодня 11:25</h5>
+                  </div>
+                  <div class="card__info">
+                    <img src="./svg/tag.svg" alt="" />
+                    <h5>90 500 000 сум</h5>
+                  </div>
+                </div>
+                <div class="card__button">
+                  <a class="card__link" href="#">Подробнее</a>
+                  <a class="card__hover favorite" href="#">Избранное</a>
+                  <a href="#" class="card__hover favorite__phone"
+                    ><i class="far fa-heart"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__status">Премиум</div>
+              <img class="card__image" src="./images/src/image1.png" alt="" />
+              <div class="card__padding">
+                <h4 class="card__text">
+                  Стенка в гостинную Hyper коричневый ЛДСП
+                </h4>
+                <div class="card__list">
+                  <div class="card__info phone">
+                    <img src="./svg/location.svg" alt="" />
+                    <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                  </div>
+                  <div class="card__info phone">
+                    <img src="./svg/clock.svg" alt="" />
+                    <h5>Сегодня 11:25</h5>
+                  </div>
+                  <div class="card__info">
+                    <img src="./svg/tag.svg" alt="" />
+                    <h5>90 500 000 сум</h5>
+                  </div>
+                </div>
+                <div class="card__button">
+                  <a class="card__link" href="#">Подробнее</a>
+                  <a class="card__hover favorite" href="#">Избранное</a>
+                  <a href="#" class="card__hover favorite__phone"
+                    ><i class="far fa-heart"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__status">Премиум</div>
+              <img class="card__image" src="./images/src/image1.png" alt="" />
+              <div class="card__padding">
+                <h4 class="card__text">
+                  Стенка в гостинную Hyper коричневый ЛДСП
+                </h4>
+                <div class="card__list">
+                  <div class="card__info phone">
+                    <img src="./svg/location.svg" alt="" />
+                    <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                  </div>
+                  <div class="card__info phone">
+                    <img src="./svg/clock.svg " alt="" />
+                    <h5>Сегодня 11:25</h5>
+                  </div>
+                  <div class="card__info">
+                    <img src="./svg/tag.svg" alt="" />
+                    <h5>90 500 000 сум</h5>
+                  </div>
+                </div>
+                <div class="card__button">
+                  <a class="card__link" href="#">Подробнее</a>
+                  <a class="card__hover favorite" href="#">Избранное</a>
+                  <a href="#" class="card__hover favorite__phone"
+                    ><i class="far fa-heart"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__show">
+            <button class="cards__button">Посмотреть все</button>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="wrapper">
+          <h2 class="cards__header">Похожие объявления</h2>
+
+          <div class="cards__box">
+            <div class="card">
+              <div class="card__status">Премиум</div>
+              <img class="card__image" src="./images/src/image1.png" alt="" />
+              <div class="card__padding">
+                <h4 class="card__text">
+                  Стенка в гостинную Hyper коричневый ЛДСП
+                </h4>
+                <div class="card__list">
+                  <div class="card__info phone">
+                    <img src="./svg/location.svg" alt="" />
+                    <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                  </div>
+                  <div class="card__info phone">
+                    <img src="./svg/clock.svg" alt="" />
+                    <h5>Сегодня 11:25</h5>
+                  </div>
+                  <div class="card__info">
+                    <img src="./svg/tag.svg" alt="" />
+                    <h5>90 500 000 сум</h5>
+                  </div>
+                </div>
+                <div class="card__button">
+                  <a class="card__link" href="#">Подробнее</a>
+                  <a class="card__hover favorite" href="#">Избранное</a>
+                  <a href="#" class="card__hover favorite__phone"
+                    ><i class="far fa-heart"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__status">Премиум</div>
+              <img class="card__image" src="./images/src/image1.png" alt="" />
+              <div class="card__padding">
+                <h4 class="card__text">
+                  Стенка в гостинную Hyper коричневый ЛДСП
+                </h4>
+                <div class="card__list">
+                  <div class="card__info phone">
+                    <img src="./svg/location.svg" alt="" />
+                    <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                  </div>
+                  <div class="card__info phone">
+                    <img src="./svg/clock.svg" alt="" />
+                    <h5>Сегодня 11:25</h5>
+                  </div>
+                  <div class="card__info">
+                    <img src="./svg/tag.svg" alt="" />
+                    <h5>90 500 000 сум</h5>
+                  </div>
+                </div>
+                <div class="card__button">
+                  <a class="card__link" href="#">Подробнее</a>
+                  <a class="card__hover favorite" href="#">Избранное</a>
+                  <a href="#" class="card__hover favorite__phone"
+                    ><i class="far fa-heart"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__status">Премиум</div>
+              <img class="card__image" src="./images/src/image1.png" alt="" />
+              <div class="card__padding">
+                <h4 class="card__text">
+                  Стенка в гостинную Hyper коричневый ЛДСП
+                </h4>
+                <div class="card__list">
+                  <div class="card__info phone">
+                    <img src="./svg/location.svg" alt="" />
+                    <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                  </div>
+                  <div class="card__info phone">
+                    <img src="./svg/clock.svg " alt="" />
+                    <h5>Сегодня 11:25</h5>
+                  </div>
+                  <div class="card__info">
+                    <img src="./svg/tag.svg" alt="" />
+                    <h5>90 500 000 сум</h5>
+                  </div>
+                </div>
+                <div class="card__button">
+                  <a class="card__link" href="#">Подробнее</a>
+                  <a class="card__hover favorite" href="#">Избранное</a>
+                  <a href="#" class="card__hover favorite__phone"
+                    ><i class="far fa-heart"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__show">
+            <button class="cards__button">Посмотреть все</button>
           </div>
         </div>
       </div>
@@ -278,6 +494,9 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div class="cards__show">
+            <button class="cards__button">Посмотреть все</button>
           </div>
         </div>
       </div>

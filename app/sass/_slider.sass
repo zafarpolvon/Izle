@@ -31,21 +31,25 @@
 .about
   display: flex
   flex-direction: row
+  &__box
+    margin-top: 50px
   &__things
     margin-top: 50px
   &__info
+    position: relative
     width: 48%
     background: #E6F3F4
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25)
     margin: 0 20px
   &__info__2
+    position: relative
     width: 48%
     background: #E6F3F4
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25)
     margin: 0 20px
     display: flex
     flex-direction: column
-    padding: 0 30px
+    padding: 0 20px
   &__save
     display: flex
     justify-content: space-between
@@ -87,6 +91,7 @@
   &__user
     display: flex
     flex-direction: row
+    margin-top: 20px
   &__text
     font-family: 'Lato', sans-serif
     font-style: normal
@@ -140,12 +145,128 @@
   display: none
 .white
   &__info
+    position: relative
     background: #FFFFFF
+    width: 48%
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25)
+    margin: 0 20px
+    padding: 0 20px
+  &__title
+    font-family: 'Lato', sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 36px
+    line-height: 43px
+    color: #616161
+    margin-top: 30px
+    text-align: center
+    margin-bottom: 20px
 .user
   &__info
     margin-left: 20px
     h6
+      margin-top: 10px
       margin-bottom: 0px
+      font-style: normal
+      font-weight: 600
+      font-size: 24px
+      line-height: 29px
+      color: #000000
     p
       margin-top: 0px
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 17px
+      color: #616161
+  &__message
+    background: #E6F3F4
+    border: none
+    width: 100%
+    resize: none
+    font-style: normal
+    font-weight: 500
+    font-size: 18px
+    line-height: 22px
+    padding: 10px 20px
+    color: rgba(97, 97, 97, 0.8)
+    margin-top: 10px
+  &__contact
+    display: flex
+    justify-content: space-between
+    flex-direction: row
+    margin-top: 20px
+  &__link
+    display: flex
+    text-decoration: none
+    img
+  &__number
+    display: flex
+    align-items: center
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 24px
+    color: #038992
+    margin-left: 10px
+
+  &__send
+    display: flex
+    align-items: center
+    background: #E6F3F4
+    border-radius: 8px    
+    padding: 5px 20px
+    font-style: normal
+    font-weight: 600
+    font-size: 18px
+    line-height: 22px
+    a
+      text-decoration: none
+      color: rgba(97, 97, 97, 0.8)
+  &__file
+    display: flex
+    align-items: center
+  &__file__name
+    margin-left: 20px
+    margin-bottom: 20px
+    h6
+      margin-top: 10px
+      margin-bottom: 0px
+      font-style: normal
+      font-weight: 600
+      font-size: 18px
+      line-height: 22px
+      color: #000000
+    p
+      margin-top: 5px
+      margin-bottom: 0px 
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 17px
+      color: #616161
+
+  &__location
+    font-family: 'Lato', sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 36px
+    line-height: 43px
+    color: #616161
+    margin-top: 30px
+    margin-bottom: 30px
+    text-align: center
+.location
+  text-align: center
+  &__name
+    font-family: 'Lato', sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 29px
+    color: #000000
+    margin: 0 auto
+    i
+      margin-right: 10px
+  &__image
+    margin-top: 50px
