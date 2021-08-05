@@ -12,6 +12,10 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
@@ -20,7 +24,7 @@
   </head>
 
   <body>
-    <div class="profile">
+    <div class="chosen">
       <header class="header">
         <div class="wrapper">
           <div class="header__main">
@@ -178,264 +182,282 @@
           </div>
         </div>
       </header>
-      <div class="amount">
+      <div class="chosen">
         <div class="wrapper">
-          <div class="amount__box">
-            <div class="amount__info">
-              <img src="./svg/wallet.svg" alt="" />
-              <h5>Ваш счет: 123 000 сум</h5>
-            </div>
-            <div class="amount__link">
-              <a href="#">Пополнить счет</a>
-              <a href="#">Купить пакет</a>
-            </div>
-          </div>
           <div class="filter">
             <div class="filter__par">
-              <h3>Объявления</h3>
+              <h3>Избранные результаты поиска</h3>
             </div>
             <div class="filter__header">
-              <a class="filter__link on" href="profile.html">Объявления</a>
-              <a class="filter__link" href="message.html">Сообщения</a>
-              <a class="filter__link" href="payment.html"
-                >Платежи и счет izle</a
+              <a class="filter__link" href="chosen.html"
+                >Избранные объявления</a
               >
-              <a class="filter__link" href="settings.html">Настройки</a>
-              <a class="filter__link" href="#">Мой бизнес</a>
+              <a class="filter__link on" href="chosenfilter.html"
+                >Избранные результаты поиска</a
+              >
+              <a class="filter__link" href="recently.html"
+                >Недавно просмотренные</a
+              >
             </div>
           </div>
         </div>
       </div>
-      <div class="declaration">
+
+      <div class="cards">
         <div class="wrapper">
-          <div class="active">
-            <div class="active__status">
-              <a href="#">Активные ( 4 )</a>
-              <a href="#">Неактивные ( 4 )</a>
-            </div>
-            <div class="active__search">
-              <div class="active__line">
-                <img src="./svg/search-gray.svg" alt="" />
-                <input placeholder="Поиск......." type="text" />
-              </div>
-              <button>Поиск</button>
-            </div>
-          </div>
-          <div class="active__limit">
-            <h5>
-              Проверьте, в каких рубриках вы достигли лимита бесплатных
-              объявлений
-            </h5>
-            <a href="#">Детали</a>
-          </div>
-          <div class="active__checkbox">
-            <ul class="checkbox__main">
-              <li class="search__item">
-                <input
-                  class="checkbox__all"
-                  id="styled-checkbox-1"
-                  type="checkbox"
-                  value="value1"
+          <div class="premium">
+            <div class="chosen__box">
+              <div class="chosen__card">
+                <div class="chosen__status__top">Топ</div>
+                <img
+                  class="chosen__image"
+                  src="./images/src/image1.png"
+                  alt=""
                 />
-                <label class="search__checkitem" for="styled-checkbox-1"
-                  >Все</label
-                >
-              </li>
-            </ul>
-            <div class="active__sort">
-              <select class="active__select" name="" id="">
-                <option class="select__item" value="">Сортировка</option>
-                <option class="select__item">Test</option>
-                <option class="select__item">Test</option>
-                <option class="select__item">Test</option>
-                <option class="select__item">Test</option>
-              </select>
-              <img
-                class="active__select__icon"
-                src="./svg/dropdown-gray.svg"
-                alt=""
-              />
+                <div class="card__padding">
+                  <h4 class="chosen__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="chosen__info phone">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="chosen__info phone">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="chosen__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="chosen__link" href="#">Подробнее</a>
+                    <a href="#" class="chosen__link">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="chosen__card">
+                <img
+                  class="chosen__image"
+                  src="./images/src/image1.png"
+                  alt=""
+                />
+                <div class="card__padding">
+                  <h4 class="chosen__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="chosen__info phone">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="chosen__info phone">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="chosen__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="chosen__link" href="#">Подробнее</a>
+                    <a href="#" class="chosen__link">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="chosen__card">
+                <div class="chosen__status">Премиум</div>
+                <img
+                  class="chosen__image"
+                  src="./images/src/image1.png"
+                  alt=""
+                />
+                <div class="card__padding">
+                  <h4 class="chosen__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="chosen__info phone">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="chosen__info phone">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="chosen__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="chosen__link" href="#">Подробнее</a>
+                    <a href="#" class="chosen__link">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="chosen__card">
+                <div class="chosen__status">Премиум</div>
+                <img
+                  class="chosen__image"
+                  src="./images/src/image1.png"
+                  alt=""
+                />
+                <div class="card__padding">
+                  <h4 class="chosen__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="chosen__info phone">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="chosen__info phone">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="chosen__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="chosen__link" href="#">Подробнее</a>
+                    <a href="#" class="chosen__link">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="chosen__card">
+                <div class="chosen__status">Премиум</div>
+                <img
+                  class="chosen__image"
+                  src="./images/src/image1.png"
+                  alt=""
+                />
+                <div class="card__padding">
+                  <h4 class="chosen__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="chosen__info phone">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="chosen__info phone">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="chosen__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="chosen__link" href="#">Подробнее</a>
+                    <a href="#" class="chosen__link">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="chosen__card">
+                <div class="chosen__status">Премиум</div>
+                <img
+                  class="chosen__image"
+                  src="./images/src/image1.png"
+                  alt=""
+                />
+                <div class="card__padding">
+                  <h4 class="chosen__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="chosen__info phone">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="chosen__info phone">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="chosen__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="chosen__link" href="#">Подробнее</a>
+                    <a href="#" class="chosen__link">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="chosen__card">
+                <div class="chosen__status">Премиум</div>
+                <img
+                  class="chosen__image"
+                  src="./images/src/image1.png"
+                  alt=""
+                />
+                <div class="card__padding">
+                  <h4 class="chosen__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="chosen__info phone">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="chosen__info phone">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="chosen__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="chosen__link" href="#">Подробнее</a>
+                    <a href="#" class="chosen__link">Избранное</a>
+                  </div>
+                </div>
+              </div>
+              <div class="chosen__card">
+                <div class="chosen__status">Премиум</div>
+                <img
+                  class="chosen__image"
+                  src="./images/src/image1.png"
+                  alt=""
+                />
+                <div class="card__padding">
+                  <h4 class="chosen__text__filter">
+                    Стенка в гостинную Hyper коричневый ЛДСП
+                  </h4>
+                  <div class="card__list">
+                    <div class="chosen__info phone">
+                      <img src="./svg/location.svg" alt="" />
+                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                    </div>
+                    <div class="chosen__info phone">
+                      <img src="./svg/clock.svg" alt="" />
+                      <h5>Сегодня 11:25</h5>
+                    </div>
+                    <div class="chosen__info">
+                      <img src="./svg/tag.svg" alt="" />
+                      <h5>90 500 000 сум</h5>
+                    </div>
+                  </div>
+                  <div class="card__button">
+                    <a class="chosen__link" href="#">Подробнее</a>
+                    <a href="#" class="chosen__link">Избранное</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="profile__box">
-            <div class="profile__select">
-              <ul class="checkbox__main">
-                <li class="search__item__profile">
-                  <input
-                    class="checkbox__all"
-                    id="styled-checkbox-2"
-                    type="checkbox"
-                    value="value1"
-                  />
-                  <label
-                    class="search__checkitem"
-                    for="styled-checkbox-2"
-                  ></label>
-                </li>
-              </ul>
-            </div>
-            <div class="profile__information">
-              <div class="profile__image">
-                <img src="./images/src/image 8.png" alt="" />
-              </div>
-              <div class="profile__title">
-                <h5>Платье для девочки.Турция</h5>
-                <h6>Ташкент, Ташкентская область, Юнусабадский район</h6>
-                <h6>С 14 июля по 13 августа</h6>
-                <div class="profile__link">
-                  <a href="#">Посмотреть</a>
-                  <a href="#">Редактировать</a>
-                  <a href="#">Деактивировать</a>
-                </div>
-                <a class="profile__statistic" href="#">
-                  Статистика
-                  <img src="./svg/chart.svg" alt="" />
-                </a>
-              </div>
-              <div class="profile__right">
-                <div class="profile__cost">
-                  <h5>190 000 сум</h5>
-                </div>
-                <div class="profile__watch">
-                  <span>
-                    <i class="far fa-eye"></i>
-                    123
-                  </span>
-                  <span>
-                    <i class="far fa-bookmark"></i>
-                    15
-                  </span>
-                  <span>
-                    <i class="far fa-envelope"></i>
-                    15
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="profile__up">
-            <a href="payment.html">Поднять на 300сум</a>
-            <a href="payment.html">Рекламировать</a>
-          </div>
-          <div class="profile__box">
-            <div class="profile__select">
-              <ul class="checkbox__main">
-                <li class="search__item__profile">
-                  <input
-                    class="checkbox__all"
-                    id="styled-checkbox-4"
-                    type="checkbox"
-                    value="value1"
-                  />
-                  <label
-                    class="search__checkitem"
-                    for="styled-checkbox-2"
-                  ></label>
-                </li>
-              </ul>
-            </div>
-            <div class="profile__information">
-              <div class="profile__image">
-                <img src="./images/src/image 8.png" alt="" />
-              </div>
-              <div class="profile__title">
-                <h5>Платье для девочки.Турция</h5>
-                <h6>Ташкент, Ташкентская область, Юнусабадский район</h6>
-                <h6>С 14 июля по 13 августа</h6>
-                <div class="profile__link">
-                  <a href="#">Посмотреть</a>
-                  <a href="#">Редактировать</a>
-                  <a href="#">Деактивировать</a>
-                </div>
-                <a class="profile__statistic" href="#">
-                  Статистика
-                  <img src="./svg/chart.svg" alt="" />
-                </a>
-              </div>
-              <div class="profile__right">
-                <div class="profile__cost">
-                  <h5>190 000 сум</h5>
-                </div>
-                <div class="profile__watch">
-                  <span>
-                    <i class="far fa-eye"></i>
-                    123
-                  </span>
-                  <span>
-                    <i class="far fa-bookmark"></i>
-                    15
-                  </span>
-                  <span>
-                    <i class="far fa-envelope"></i>
-                    15
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="profile__up">
-            <a href="#">Поднять на 300сум</a>
-            <a href="#">Рекламировать</a>
-          </div>
-          <div class="profile__box">
-            <div class="profile__select">
-              <ul class="checkbox__main">
-                <li class="search__item__profile">
-                  <input
-                    class="checkbox__all"
-                    id="styled-checkbox-3"
-                    type="checkbox"
-                    value="value1"
-                  />
-                  <label
-                    class="search__checkitem"
-                    for="styled-checkbox-2"
-                  ></label>
-                </li>
-              </ul>
-            </div>
-            <div class="profile__information">
-              <div class="profile__image">
-                <img src="./images/src/image 8.png" alt="" />
-              </div>
-              <div class="profile__title">
-                <h5>Платье для девочки.Турция</h5>
-                <h6>Ташкент, Ташкентская область, Юнусабадский район</h6>
-                <h6>С 14 июля по 13 августа</h6>
-                <div class="profile__link">
-                  <a href="#">Посмотреть</a>
-                  <a href="#">Редактировать</a>
-                  <a href="#">Деактивировать</a>
-                </div>
-                <a class="profile__statistic" href="#">
-                  Статистика
-                  <img src="./svg/chart.svg" alt="" />
-                </a>
-              </div>
-              <div class="profile__right">
-                <div class="profile__cost">
-                  <h5>190 000 сум</h5>
-                </div>
-                <div class="profile__watch">
-                  <span>
-                    <i class="far fa-eye"></i>
-                    123
-                  </span>
-                  <span>
-                    <i class="far fa-bookmark"></i>
-                    15
-                  </span>
-                  <span>
-                    <i class="far fa-envelope"></i>
-                    15
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="profile__up">
-            <a href="#">Поднять на 300сум</a>
-            <a href="#">Рекламировать</a>
+          <div class="chosen__show">
+            <button class="chosen__button">Посмотреть все</button>
           </div>
         </div>
       </div>

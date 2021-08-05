@@ -32,8 +32,34 @@
                 <li class="nav__item">
                   <a class="nav__link" href="index.html">Главная</a>
                 </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="filter.html">Профиль</a>
+                <li class="nav__item menu__profile">
+                  <a class="nav__link">Профиль</a>
+                  <div class="dmenu__box">
+                    <div class="dmenu__image">
+                      <img src="./images/src/dropdown.png" alt="" />
+                      <div class="dropdown__info">
+                        <h6>Shohrux Pirnazarov</h6>
+                        <p>ID: 12345678</p>
+                      </div>
+                    </div>
+                    <div class="dmenu__main">
+                      <h5 class="dmenu__title">Мой профиль:</h5>
+                      <a class="dmenu__link" href="profile.html">Объявления</a>
+                      <a class="dmenu__link" href="product.html">Сообщения</a>
+                      <a class="dmenu__link" href="payment.html"
+                        >Платежи и счет izle</a
+                      >
+                      <a class="dmenu__link" href="settings.html">Настройки</a>
+                      <h5 class="dmenu__title">Избранные:</h5>
+                      <a class="dmenu__link" href="chosen.html"
+                        >Объявления: 12</a
+                      >
+                      <a class="dmenu__link" href="chosenfilter.html"
+                        >Поиск: 10</a
+                      >
+                      <a class="dmenu__title" href="">Выйти</a>
+                    </div>
+                  </div>
                 </li>
                 <li class="nav__item">
                   <a class="nav__link" href="create.html">Подать объявления</a>
@@ -41,10 +67,104 @@
               </ul>
             </nav>
             <div class="nav__last">
+              <a onclick="dropdownFunction()" class="nav__saved">
+                <i class="far fa-bell"></i>
+                <span class="nav__saved__number">1</span>
+              </a>
               <a class="nav__saved" href="#">
                 <i class="far fa-bookmark"></i>
                 <span class="nav__saved__number">1</span>
               </a>
+              <div class="dropdown__box" id="dropdown">
+                <h5 class="dropdown__title">Сообщения</h5>
+                <ul class="dropdown__ul">
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      <div class="dropdown__image">
+                        <span class="nav__saved__dropdown">2</span>
+                        <img src="./images/src/dropdown.png" alt="" />
+                        <div class="dropdown__info">
+                          <h6>Shohrux Pirnazarov</h6>
+
+                          <p>Assolomu aleykum...</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="dropdown__flex">
+                      <span>05.08.2021</span>
+                      <span>17:05</span>
+                    </div>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      <div class="dropdown__image">
+                        <span class="nav__saved__dropdown">1</span>
+                        <img src="./images/src/dropdown.png" alt="" />
+                        <div class="dropdown__info">
+                          <h6>Shohrux Pirnazarov</h6>
+
+                          <p>Assolomu aleykum...</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="dropdown__flex">
+                      <span>05.08.2021</span>
+                      <span>17:05</span>
+                    </div>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      <div class="dropdown__image">
+                        <span class="nav__saved__dropdown">3</span>
+                        <img src="./images/src/dropdown.png" alt="" />
+                        <div class="dropdown__info">
+                          <h6>Shohrux Pirnazarov</h6>
+
+                          <p>Assolomu aleykum...</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="dropdown__flex">
+                      <span>05.08.2021</span>
+                      <span>17:05</span>
+                    </div>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      <div class="dropdown__image">
+                        <span class="nav__saved__dropdown">1</span>
+                        <img src="./images/src/dropdown.png" alt="" />
+                        <div class="dropdown__info">
+                          <h6>Shohrux Pirnazarov</h6>
+
+                          <p>Assolomu aleykum...</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="dropdown__flex">
+                      <span>05.08.2021</span>
+                      <span>17:05</span>
+                    </div>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      <div class="dropdown__image">
+                        <span class="nav__saved__dropdown">1</span>
+                        <img src="./images/src/dropdown.png" alt="" />
+                        <div class="dropdown__info">
+                          <h6>Shohrux Pirnazarov</h6>
+
+                          <p>Assolomu aleykum...</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="dropdown__flex">
+                      <span>05.08.2021</span>
+                      <span>17:05</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
               <select
                 class="nav__select"
                 name="language-picker-select"
@@ -66,19 +186,21 @@
               <h5>Ваш счет: 123 000 сум</h5>
             </div>
             <div class="amount__link">
-              <a href="#">Пополнить счет</a>
-              <a href="#">Купить пакет</a>
+              <a href="payment.html">Пополнить счет</a>
+              <a href="payment.html">Купить пакет</a>
             </div>
           </div>
           <div class="filter">
             <div class="filter__par">
-              <h3>Объявления</h3>
+              <h3>Сообщения</h3>
             </div>
             <div class="filter__header">
-              <a class="filter__link" href="#">Объявления</a>
-              <a class="filter__link" href="#">Сообщения</a>
-              <a class="filter__link" href="#">Платежи и счет izle</a>
-              <a class="filter__link" href="#">Настройки</a>
+              <a class="filter__link" href="profile.html">Объявления</a>
+              <a class="filter__link on" href="message.html">Сообщения</a>
+              <a class="filter__link" href="payment.html"
+                >Платежи и счет izle</a
+              >
+              <a class="filter__link" href="settings.html">Настройки</a>
               <a class="filter__link" href="#">Мой бизнес</a>
             </div>
           </div>

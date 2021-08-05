@@ -12,9 +12,9 @@
   &__list
     display: flex
     flex-direction: row
-    justify-content: space-between
     padding: 0 20px
   &__saved
+    cursor: pointer
     text-decoration: none
     margin-right: 20px
     i
@@ -30,7 +30,16 @@
     text-align: center
     border-radius: 50%
     color: #fff
-
+  &__saved__dropdown
+    position: absolute
+    width: 20px
+    height: 20px
+    background: #84C7AE
+    margin-left: 48px
+    margin-top: 5px
+    text-align: center
+    border-radius: 50%
+    color: #fff
   &__item
     display: flex
     margin: 0
@@ -208,6 +217,9 @@
     color: #616161
     text-decoration: none
     margin: 0 15px
+    &:hover
+      color: #038992
+      text-decoration: underline
 .select
   &__main
     margin-right: 15px
@@ -400,6 +412,7 @@
       color: rgba(127, 128, 127, 0.8)
 
 .hidden
+  display: none
   &__box
     display: flex
     flex-direction: row
@@ -420,3 +433,167 @@
       line-height: 29px
       color: #616165
       text-decoration: none
+.dmenu
+  &__box
+    position: absolute
+    width: 320px
+    height: 450px
+    background: #FFFFFF
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25)
+    border-radius: 10px
+    z-index: 9999
+    margin-left: -90px
+    margin-top: 35px
+    display: none
+  &__main
+    display: flex
+    flex-direction: column
+    padding: 10px 20px
+  &__title
+    font-family: 'Lato', sans-serif 
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 29px
+    color: #616161
+    text-decoration: none
+    margin: 0
+    margin-top: 15px
+  &__link
+    display: inline-block
+    font-family: 'Lato', sans-serif 
+    font-style: normal
+    font-weight: 500
+    font-size: 20px
+    line-height: 24px
+    color: #616161
+    text-decoration: none
+    margin: 0
+    margin-top: 8px
+    &:hover
+      color: #038992
+  &__image
+    display: flex
+    flex-direction: row
+    margin-left: 20px
+    margin-top: 20px
+    h6
+      font-family: 'Lato', sans-serif 
+      font-style: normal
+      font-weight: 600
+      font-size: 24px
+      line-height: 29px
+      color: #000000
+      margin-bottom: 0
+      margin-top: 10px
+    p
+      font-family: 'Lato', sans-serif 
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 24px
+      color: #616161
+      margin-bottom: 0
+      margin-top: 0px
+
+.dropdown
+  &__box
+    position: absolute
+    width: 450px
+    height: 300px
+    background: #FFFFFF
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25)
+    border-radius: 10px
+    z-index: 9999
+    margin-left: -420px
+    margin-top: 25px
+  &__title
+    font-family: 'Lato', sans-serif 
+    font-style: normal
+    font-weight: 600
+    font-size: 20px
+    line-height: 29px
+    color: #038992
+    margin-bottom: 0
+    margin-top: 10px
+    text-align: center
+    
+  &__ul
+    padding-left: 20px
+    overflow-y: scroll 
+    position: relative
+    height: 220px
+  &__ul::-webkit-scrollbar-track 
+    border: none
+    margin-left: 10px
+    background-color: #ffffff
+    border-radius: 10px
+  &__ul::-webkit-scrollbar 
+    width: 2px
+  &__ul::-webkit-scrollbar-thumb 
+    border-radius: 10px
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3)
+    background-color: #3b3b3b
+    border: 1px solid #000
+  &__item
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin-top: 10px
+  &__image
+    display: flex
+    flex-direction: row
+    img
+      width: 60px
+  &__link
+    display: flex
+    justify-content: space-between
+
+    flex-direction: row
+    text-decoration: none
+  &__flex
+    display: flex
+    flex-direction: column
+    align-items: center 
+    margin-right: 20px
+    margin-top: 15px
+    span
+      padding-top: -20px
+      font-family: 'Lato', sans-serif 
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 24px
+      color: #616161
+      margin-bottom: 0
+      margin-top: 0px
+
+  &__info
+    margin-left: 15px
+    h6
+      font-family: 'Lato', sans-serif 
+      font-style: normal
+      font-weight: 600
+      font-size: 20px
+      line-height: 29px
+      color: #000000
+      margin-bottom: 0
+      margin-top: 10px
+    p
+      font-family: 'Lato', sans-serif 
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 24px
+      color: #616161
+      margin-bottom: 0
+      margin-top: 0px
+#dropdown
+  display: none
+.menu__profile
+  cursor: pointer
+.menu__profile:hover .dmenu__box
+  display: block
+.on
+  color: #038992
+  text-decoration: underline

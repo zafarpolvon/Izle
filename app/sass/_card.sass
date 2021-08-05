@@ -268,7 +268,139 @@
     border-radius: 20px
     @media (max-width: 640px)
       height: 120px
-  
+.chosen
+  background: #E5E5E5
+  &__box
+    width: 100%
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-top: 50px
+  &__show
+    text-align: center
+  &__button
+    margin-top: 20px
+    margin-bottom: 50px
+    border: none
+    font-family: 'Lato', sans-serif
+    background: #84C7AE
+    border-radius: 10px
+    font-style: normal
+    font-weight: 600
+    font-size: 20px
+    line-height: 24px
+    color: #FFFFFF
+    padding: 10px 15px
+    border: 2px solid #84C7AE
+    cursor: pointer
+    transition-property: width
+    transition-duration: 2s
+    transition-timing-function: linear
+    transition-delay: 1s
+    &:hover
+      border: 2px solid #84C7AE
+      background: #fff
+      color: #84C7AE
+    @media (max-width: 640px)
+      font-size: 22px
+      font-weight: 500
+      line-height: 22px
+  &__card
+    display: flex
+    flex-direction: column
+    width: 23%
+    min-height: 400px
+    background: #FFFFFF
+    border-radius: 20px
+    position: relative
+    margin-bottom: 30px
+    padding-bottom: 20px
+    @media (max-width: 640px)
+      width: 48%
+      min-height: 300px
+  &__image
+    width: 100%
+    height: 158px
+    border-radius: 20px
+    @media (max-width: 640px)
+      height: 120px
+  &__info
+    display: flex
+    flex-direction: row
+    font-family: 'Lato', sans-serif
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    line-height: 12px
+    text-align: center
+    color: #000000
+    h5
+      margin: 10px 0
+    img
+      margin-right: 5px
+  &__link
+    background: #ffffff
+    border-radius: 6.60645px
+    border: 2px solid #84C7AE
+    font-family: 'Lato', sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 14px
+    color: #84C7AE
+    padding: 5px 12px
+    margin: 0 5px
+    text-decoration: none
+    &:hover
+      background: #84C7AE
+      color: #fff
+  &__status
+    position: absolute
+    right: 0
+    top: 0
+    background: #F7D501
+    border-radius: 0px 18.5px
+    padding: 10px
+    font-family: 'Lato', sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 16px
+    display: flex
+    align-items: center
+    color: #FFFFFF
+    @media (max-width: 640px)
+      font-size: 8px
+      padding: 5px
+  &__status__top
+    position: absolute
+    right: 0
+    top: 0
+    background: #038992
+    border-radius: 0px 18.5px
+    padding: 10px 20px
+    font-family: 'Lato', sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 16px
+    display: flex
+    align-items: center
+    color: #FFFFFF
+    @media (max-width: 640px)
+      font-size: 10px
+      padding: 5px 10px
+.chosen__text__filter
+  text-align: center 
+  font-family: 'Lato', sans-serif
+  font-style: normal
+  font-weight: 600
+  font-size: 18px
+  line-height: 20px
+  text-align: center
+  color: #000000
+  margin-bottom: 20px
 .ads__first
   display: flex
   justify-content: center
