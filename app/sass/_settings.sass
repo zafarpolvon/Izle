@@ -4,8 +4,12 @@
   &__contact
     display: flex
     justify-content: space-between
+    @media (max-width: 640px)
+      flex-direction: column
   &__select
     margin-top: 70px
+    @media (max-width: 640px)
+      margin-top: 30px
   &__cv
     display: flex
     flex-direction: column
@@ -17,6 +21,9 @@
       line-height: 29px
       color: #000000
       margin-bottom: 20px
+      @media (max-width: 640px)
+        text-align: center
+        font-size: 22px
     h4
       font-family: 'Lato', sans-serif
       font-style: normal
@@ -35,6 +42,9 @@
       color: #7F807F
       margin-top: 20px
       margin-bottom: 0px
+      @media (max-width: 640px)
+        font-size: 20px
+        text-align: center
   &__flexbox
     display: flex
     span
@@ -56,6 +66,9 @@
     display: flex
     flex-direction: column
     width: 60%
+    @media (max-width: 640px)
+      width: 100%
+
     h5
       font-family: 'Lato', sans-serif
       font-style: normal
@@ -70,6 +83,8 @@
     flex-direction: row
     padding-top: 30px
     padding-bottom: 40px 
+    @media (max-width: 640px)
+      flex-direction: column
   &__green
     h5
       font-family: 'Lato', sans-serif
@@ -96,9 +111,13 @@
     width: 40%
     display: flex
     align-items: center
+    @media (max-width: 640px)
+      width: 100%
   &__flex
     display: flex
     flex-direction: row
+    @media (max-width: 640px)
+      flex-direction: column
     p
       display: flex
       align-items: center
@@ -109,6 +128,11 @@
       line-height: 29px
       color: #7F807F
       margin-left: 20px
+      @media (max-width: 640px)
+        text-align: center
+      img
+        @media (max-width: 640px)
+          width: 100%
   &__save
     display: flex
     justify-content: center
@@ -137,15 +161,21 @@
       color: #616161
       margin-top: 30px
       margin-bottom: 30px
+      @media (max-width: 640px)
+        font-size: 24px
 .notif
   &__box
     display: flex
     flex-direction: row
     padding-bottom: 30px
+    @media (max-width: 768px)
+      justify-content: space-between
   &__first
     display: flex
     flex-direction: column
     width: 70%
+    @media (max-width: 768px)
+      width: 75%
     h5
       font-family: 'Lato', sans-serif
       font-style: normal
@@ -155,6 +185,8 @@
       color: #000000
       margin-top: 20px
       margin-bottom: 10px
+      @media (max-width: 768px)
+        font-size: 24px
     p
       font-family: 'Lato', sans-serif
       font-style: normal
@@ -164,16 +196,23 @@
       color: #7F807F
       margin-top: 0px
       margin-bottom: 3px
+      @media (max-width: 768px)
+        font-size: 18px
   &__second
     display: flex
     flex-direction: column
     width: 15%
+    @media (max-width: 768px)
+      width: 12%
     ul
       display: flex
       justify-content: center
       margin-top: 68px
       &:nth-child(2)
         margin-top: 0
+      @media (max-width: 768px)
+        margin-top: 80px
+        
     h5
       font-family: 'Lato', sans-serif
       font-style: normal
@@ -184,16 +223,26 @@
       margin-top: 20px
       margin-bottom: 10px
       margin-left: 15px
+    i
+      font-size: 30px
+      line-height: 36px
+      color: #000000
+      margin-top: 20px
+      margin-bottom: 10px
   &__third
     display: flex
     flex-direction: column
     width: 15%
+    @media (max-width: 768px)
+      width: 12%
     ul
       display: flex
       justify-content: center
       margin-top: 68px
       &:nth-child(2)
         margin-top: 0
+      @media (max-width: 768px)
+        margin-top: 80px
     h5
       font-family: 'Lato', sans-serif
       font-style: normal
@@ -203,9 +252,35 @@
       color: #000000
       margin-top: 20px
       margin-bottom: 10px
+    i
+      font-size: 30px
+      line-height: 36px
+      color: #000000
+      margin-top: 20px
+      margin-bottom: 10px
+      padding-left: 5px
+  &__item
+    font-family: 'Lato', sans-serif 
+    font-style: normal
+    font-weight: 500
+    font-size: 24px
+    line-height: 29px
+    color: #7F807F
+    margin-right: 40px
+    @media (max-width: 768px)
+      font-size: 16px
+      margin-right: 0px
 .last__line
   background: #E5E5E5
   padding-top: 30px
   padding-bottom: 30px
   margin-top: 50px
   margin-bottom: -50px
+.displayphone
+  display: none !important
+  @media (max-width: 640px)
+    display: block !important
+.displaylaptop
+  display: block
+  @media (max-width: 640px)
+    display: none

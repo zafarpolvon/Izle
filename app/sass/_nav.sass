@@ -94,11 +94,6 @@
 .search
   margin-top: 50px
   margin-bottom: 50px
-  &__filter
-    background-image: url("../images/src/filter.png")
-    background-repeat: no-repeat
-    background-size: contain
-    background-position: center
   &__main
     display: flex
     flex-direction: row
@@ -111,6 +106,8 @@
     border-right: 0px
     width: 430px
     border-radius: 10px 0px 0px 10px
+    @media (max-width: 640px)
+      width: 70%
     & input
       height: 100%
       width: 100%
@@ -140,6 +137,7 @@
       line-height: 29px
       color: rgba(97, 97, 97, 0.8)
     @media (max-width: 768px)
+      width: 30%
       display: none
       & input
         font-size: 18px
@@ -147,6 +145,7 @@
     padding: 5px
     @media (max-width: 768px)
       padding: 0
+      width: 25px
   &__button
     margin-left: 5px
     padding: 0 25px
@@ -193,6 +192,12 @@
   display: flex
   flex-direction: column
   text-align: center
+  @media (max-width: 640px)
+    flex-direction: column
+  &__header
+    @media (max-width: 640px)
+      display: flex
+      flex-direction: column
   &__par
     font-family: 'Lato', sans-serif
     font-style: normal
@@ -220,6 +225,8 @@
     &:hover
       color: #038992
       text-decoration: underline
+    @media (max-width: 640px)
+      margin-top: 10px
 .select
   &__main
     margin-right: 15px
@@ -290,7 +297,6 @@
     position: relative
     cursor: pointer
     padding: 0
-
   & + label:before 
     content: ''
     margin-right: 10px
@@ -308,8 +314,6 @@
   // Box hover
   &:hover + label:before 
     background: #038992
-  
-
   // Box focus
   &:focus + label:before 
     box-shadow: none
@@ -507,6 +511,7 @@
     z-index: 9999
     margin-left: -420px
     margin-top: 25px
+    
   &__title
     font-family: 'Lato', sans-serif 
     font-style: normal
@@ -597,3 +602,5 @@
 .on
   color: #038992
   text-decoration: underline
+#myDIV
+  display: none

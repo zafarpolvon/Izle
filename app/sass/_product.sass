@@ -6,6 +6,8 @@
     flex-direction: row
     justify-content: space-between
     width: 60%
+    @media (max-width: 640px)
+      width: 100%
     &__button
       display: flex
       align-items: center
@@ -29,18 +31,28 @@
     padding: 15px 0px 5px 20px
     height: 550px
     margin-top: 50px
+    @media (max-width: 640px)
+      width: 100%
 
   &__flex
     display: flex
     flex-direction: row
     justify-content: space-between
+    @media (max-width: 640px)
+      flex-direction: column
+    
   &__danger
     width: 38%
-    height: 465px
+    min-height: 465px
     background: #FFFFFF
     border-radius: 15px
     margin-top: 50px
     padding-right: 20px
+    @media (max-width: 640px)
+      width: 100%
+      padding-bottom: 20px
+      padding-right: 10px
+      padding-left: 10px
     h5
       font-family: 'Lato', sans-serif
       text-align: center
@@ -51,6 +63,8 @@
       color: #038992
       margin-top: 20px
       margin-bottom: 20px
+      @media (max-width: 640px)
+        font-size: 20px
     &__flex
       display: flex
       flex-direction: row
@@ -58,6 +72,8 @@
       img
         margin-top: -5px
         margin-left: 10px
+        @media (max-width: 640px)
+          width: 20px
     &__link
       text-align: center
       margin: 0 auto
@@ -71,6 +87,8 @@
         text-decoration-line: underline
         color: #038992
     &__box
+      @media (max-width: 640px)
+        padding-left: 20px
       li
         font-family: 'Lato', sans-serif
         font-style: normal
@@ -83,6 +101,8 @@
     overflow-y: auto
     padding-right: 20px
     padding-top: 20px
+    @media (max-width: 640px)
+      padding-top: 0px
     p
       margin-top: 0
       font-family: 'Lato', sans-serif
@@ -135,6 +155,8 @@
         line-height: 29px
         color: #000000
         margin: 0
+        @media (max-width: 640px)
+          font-size: 16px
       span
         display: flex
         justify-content: flex-end
@@ -159,6 +181,8 @@
         line-height: 29px
         color: #000000
         margin: 0
+        @media (max-width: 640px)
+          font-size: 16px
       span
         font-family: 'Lato', sans-serif
         font-style: normal
@@ -177,6 +201,10 @@
     align-items: flex-end
     padding: 0 20px
     margin-bottom: 20px
+    @media (max-width: 640px)
+      margin-top: 20px
+      padding-right: 20px
+      padding-left: 0
     input
       width: 100%
       height: 60px
@@ -190,5 +218,120 @@
       line-height: 29px
       color: #7F807F
       padding: 5px 20px
+      box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.5)
+      -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.5)
+      -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.5)
+      @media (max-width: 640px)
+        height: 50px
 
     
+.unique
+  background-color: #E5E5E5
+  &__box
+    display: flex
+    flex-direction: row
+    margin-top: 40px
+  &__information
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    background: #fff
+    width: 100%
+    min-height: 238px
+    @media (max-width: 640px)
+      flex-direction: column
+  &__image
+    padding: 22px
+    @media (max-width: 640px)
+      display: flex
+      justify-content: flex-end
+    img
+      width: 322px
+      height: 195px
+      @media (max-width: 640px)
+        width: 100%
+        height: 100%
+  &__title
+    margin-left: -50px
+    @media (max-width: 640px)
+      margin-left: 0px
+      padding: 0 10px
+    h5
+      font-family: 'Lato', sans-serif
+      font-style: normal
+      font-weight: 600
+      font-size: 24px
+      line-height: 29px
+      color: #000000
+      margin-top: 15px
+      margin-bottom: 10px
+    h6
+      font-family: 'Lato', sans-serif  
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 22px
+      color: #7F807F
+      margin-top: 5px
+      margin-bottom: 10px
+  &__cost
+    h5
+      font-family: 'Lato', sans-serif
+      font-style: normal
+      font-weight: 600
+      font-size: 24px
+      line-height: 29px
+      color: #000000
+      margin-top: 22px
+      margin-bottom: 0
+      @media (max-width: 640px)
+        font-size: 20px
+  &__link
+    margin-top: 25px
+    margin-bottom: 30px
+    a
+      font-family: 'Lato', sans-serif  
+      font-style: normal
+      font-weight: 600
+      font-size: 18px
+      line-height: 22px
+      color: #7F807F
+      text-decoration: none
+      margin-right: 10px
+      &:hover
+        color: #000
+  &__right
+    display: flex
+    flex-direction: column
+    text-align: right
+    margin-right: 22px
+    @media (max-width: 640px)
+      margin-right: 10px
+  &__watch
+    display: flex
+    flex-direction: row
+    align-items: flex-end
+    margin-top: 130px
+    @media (max-width: 640px)
+      margin-top: -25px
+      margin-bottom: 20px
+    span
+      margin-left: 20px
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 22px
+      color: #7F807F
+      @media (max-width: 640px)
+        margin-left: 10px
+        margin-right: 10px
+  &__statistic
+    font-family: 'Lato', sans-serif  
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 22px
+    text-decoration-line: underline
+    color: #000000
+    img
+      margin-left: 10px

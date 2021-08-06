@@ -6,7 +6,12 @@
     display: flex
     flex-direction: row
     justify-content: space-between
+    @media (max-width: 640px)
+      padding-top: 20px
   &__info
+    img
+      @media (max-width: 640px)
+        width: 30px
     h5
       font-style: normal
       font-weight: 500
@@ -14,6 +19,10 @@
       line-height: 29px
       color: #7F807F
       margin-left: 10px
+      @media (max-width: 640px)
+        font-size: 16px
+        margin-bottom: 0
+        margin-top: 7px
   &__link
     display: flex
     align-items: center
@@ -34,3 +43,8 @@
       &:hover
         background: #038992
         color: #fff
+      @media (max-width: 640px)
+        font-size: 14px
+        margin-left: 0px
+        padding: 1px 4px
+    
