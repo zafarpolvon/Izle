@@ -40,6 +40,8 @@
     text-align: center
     border-radius: 50%
     color: #fff
+    @media (max-width: 768px)
+      margin-left: 38px
   &__item
     display: flex
     margin: 0
@@ -49,7 +51,7 @@
     text-decoration: none
     font-style: normal
     font-weight: 500
-    font-size: 24px
+    font-size: 20px
     line-height: 29px
     color: #616161
     transition-property: width
@@ -202,7 +204,7 @@
     font-family: 'Lato', sans-serif
     font-style: normal
     font-weight: 600
-    font-size: 48px
+    font-size: 40px
     line-height: 58px
     color: #616161
     margin-top: 40px
@@ -287,6 +289,9 @@
   flex-direction: row
   @media (max-width: 768px)
     flex-direction: column
+  @media (max-width: 1024px)
+    flex-direction: row
+    flex-wrap: wrap
 .search__checkbox
   position: absolute // take it out of document flow
   opacity: 0 // hide it
@@ -511,6 +516,9 @@
     z-index: 9999
     margin-left: -420px
     margin-top: 25px
+    @media (max-width: 768px)
+      margin-left: -205px
+      width: 95%
     
   &__title
     font-family: 'Lato', sans-serif 
@@ -528,6 +536,8 @@
     overflow-y: scroll 
     position: relative
     height: 220px
+    @media (max-width: 768px)
+      padding-left: 10px
   &__ul::-webkit-scrollbar-track 
     border: none
     margin-left: 10px
@@ -550,6 +560,9 @@
     flex-direction: row
     img
       width: 60px
+      @media (max-width: 768px)
+        width: 50px
+        height: auto
   &__link
     display: flex
     justify-content: space-between

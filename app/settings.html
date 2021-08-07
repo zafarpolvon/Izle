@@ -18,6 +18,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
   </head>
 
   <body>
@@ -461,12 +465,18 @@
             <div class="settings__banner">
               <h5>Логотип</h5>
               <div class="settings__flex">
-                <img src="./images/src/image.png" alt="" />
+                <a href="./images/src/image.png" data-fancybox="gallery"
+                data-caption="Optional caption">
+                  <img class="settings__fancy" src="./images/src/image.png" alt="" />
+                </a>
                 <p>Рекомендованный размер лого: 200x200px</p>
               </div>
               <h5>Логотип</h5>
               <div class="settings__flex">
-                <img src="./images/src/image.png" alt="" />
+                <a href="./images/src/image.png" data-fancybox="gallery"
+                data-caption="Optional caption">
+                  <img class="settings__fancy" src="./images/src/image.png" alt="" />
+                </a>
                 <p>
                   Загрузите файл не менее 1366x210 пикселей. Вы так же можте
                   загрузить фото большого размера и отредактировать его.
@@ -623,5 +633,6 @@
     </div>
     <!-- Подключаем скрипты проекта -->
     <script src="js/app.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
   </body>
 </html>

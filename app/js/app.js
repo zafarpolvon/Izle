@@ -46,3 +46,4 @@ $(".radioContainer").on("click", function (e) {
   $(".radioContainer").removeClass("active");
   $(this).addClass("active");
 });
+new WOW().init();
