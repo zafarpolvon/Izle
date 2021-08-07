@@ -1,93 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Document</title>
 
     <!-- Подключаем стили проекта -->
     <link rel="stylesheet" href="css/app.min.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
-      rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
+</head>
 
-  <body>
+<body>
     <header class="header">
-      <div class="wrapper">
-        <div class="header__main">
-          <a class="nav__logo" href="index.html">
-            <img src="./images/src/image_4-removebg-preview 1.png" alt="" />
-          </a>
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link" href="index.html">Главная</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="filter.html">Категории</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Тарифы</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Аккаунт</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="nav__last">
-            <a class="nav__input" href="#">Войти</a>
-            <select
-              class="nav__select"
-              name="language-picker-select"
-              id="language-picker-select"
-            >
+        <div class="wrapper">
+            <div class="header__main">
+                <a class="nav__logo" href="index.html">
+                    <img src="./images/src/image_4-removebg-preview 1.png" alt="" />
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="filter.html">Категории</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="card.html">Тарифы</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="profile.html">Аккаунт</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="nav__last">
+                    <a class="nav__input" href="#">Войти</a>
+                    <select class="nav__select" name="language-picker-select" id="language-picker-select">
               <option lang="rus" value="ru" selected>RU</option>
               <option lang="en" value="eng">Eng</option>
               <option lang="uz" value="uz">UZ</option>
             </select>
-          </div>
+                </div>
+            </div>
         </div>
-      </div>
     </header>
     <div class="search__filter">
-      <div class="wrapper">
-        <div class="search__main">
-          <div class="search__first">
-            <img class="search__icon" src="./svg/search.svg" />
-            <input
-              placeholder="234 567 объявлений рядом"
-              style="border: none"
-            />
-          </div>
-          <div class="search__second">
-            <img class="search__icon" src="./svg/map.svg" />
-            <input placeholder="Весь Узбекистан" style="border: none" />
-          </div>
-          <button class="search__button">Поиск</button>
-        </div>
-        <div class="search__select">
-          <ul class="search__box">
-            <li class="search__item">
-              <input
-                class="search__checkbox"
-                id="styled-checkbox-1"
-                type="checkbox"
-                value="value1"
-              />
-              <label class="search__checkitem" for="styled-checkbox-1"
-                >Искать в тексте объявлений</label
+        <div class="wrapper">
+            <div class="search__main">
+                <div class="search__first">
+                    <img class="search__icon" src="./svg/search.svg" />
+                    <input placeholder="234 567 объявлений рядом" style="border: none" />
+                </div>
+                <div class="search__second">
+                    <img class="search__icon" src="./svg/map.svg" />
+                    <input placeholder="Весь Узбекистан" style="border: none" />
+                </div>
+                <button class="search__button">Поиск</button>
+            </div>
+            <div class="search__select">
+                <ul class="search__box">
+                    <li class="search__item">
+                        <input class="search__checkbox" id="styled-checkbox-1" type="checkbox" value="value1" />
+                        <label class="search__checkitem" for="styled-checkbox-1">Искать в тексте объявлений</label
               >
             </li>
             <li class="search__item">
@@ -221,32 +199,27 @@
           <div class="sort__main">
             <h5 class="sort__sort">Сортировка</h5>
             <div class="sort__box">
+              <div class="booxxx">
+                <div class="sort__info">
+                  <h5>Одежда для мальчиков</h5>
+                  <p>5 135</p>
+                </div>
+                <div class="sort__info">
+                  <h5>Одежда для девочек</h5>
+                  <p>5 135</p>
+                </div>
+                <div class="sort__info">
+                  <h5>Одежда для новорожденных</h5>
+                  <p>5 135</p>
+                </div>
+              </div>
               <select class="select__select first" name="" id="">
-                <option
-                  class="select__item"
-                  value=""
-                  disabled="disabled"
-                  selected="selected"
-                >
-                  Самые новые
-                </option>
+                <option class="select__item" value="" disabled="disabled" selected="selected">Самые новые</option>
                 <option class="select__item">Test</option>
                 <option class="select__item">Test</option>
                 <option class="select__item">Test</option>
                 <option class="select__item">Test</option>
               </select>
-              <div class="sort__info">
-                <h5>Одежда для мальчиков</h5>
-                <p>5 135</p>
-              </div>
-              <div class="sort__info">
-                <h5>Одежда для девочек</h5>
-                <p>5 135</p>
-              </div>
-              <div class="sort__info">
-                <h5>Одежда для новорожденных</h5>
-                <p>5 135</p>
-              </div>
             </div>
           </div>
         </div>
@@ -263,7 +236,6 @@
         <h2 class="cards__header">Премиум объявления</h2>
 
         <div class="premium">
-          <div class="premium__first">
             <div class="cards__box">
               <div class="filder__card">
                 <div class="card__status">Премиум</div>
@@ -536,10 +508,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="premium__second">
-            <img src="./images/src/ads2.png" alt="" srcset="" />
-          </div>
         </div>
       </div>
     </div>
@@ -553,7 +521,6 @@
         <h2 class="cards__header">Топ объявления</h2>
 
         <div class="premium">
-          <div class="premium__first">
             <div class="cards__box">
               <div class="filder__card">
                 <div class="card__status__top">Топ</div>
@@ -862,8 +829,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="premium__second"></div>
         </div>
       </div>
     </div>
@@ -877,7 +842,6 @@
         <h2 class="cards__header">Обычные объявления</h2>
 
         <div class="premium">
-          <div class="premium__first">
             <div class="cards__box">
               <div class="filder__card">
                 <img
@@ -1078,8 +1042,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="premium__second"></div>
         </div>
       </div>
     </div>
@@ -1102,114 +1064,7 @@
         </div>
       </div>
     </div>
-    <div class="cards">
-      <div class="wrapper">
-        <div class="ads__first">
-          <a href="#">
-            <img src="./images/src/ads1.png" alt="" />
-          </a>
-        </div>
-        <h2 class="cards__header">Недавно просмотренные</h2>
-
-        <div class="premium">
-          <div class="premium__first">
-            <div class="cards__box">
-              <div class="filder__card">
-                <div class="card__status__top">Топ</div>
-                <img class="card__image" src="./images/src/image7.png" alt="" />
-                <div class="card__padding">
-                  <h4 class="card__text__filter">
-                    Стенка в гостинную Hyper коричневый ЛДСП
-                  </h4>
-                  <div class="card__list">
-                    <div class="card__info phone">
-                      <img src="./svg/location.svg" alt="" />
-                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
-                    </div>
-                    <div class="card__info phone">
-                      <img src="./svg/clock.svg" alt="" />
-                      <h5>Сегодня 11:25</h5>
-                    </div>
-                    <div class="card__info">
-                      <img src="./svg/tag.svg" alt="" />
-                      <h5>90 500 000 сум</h5>
-                    </div>
-                  </div>
-                  <div class="card__button">
-                    <a class="card__link" href="#">Подробнее</a>
-                    <a class="card__hover favorite" href="#">Избранное</a>
-                    <a href="#" class="card__hover favorite__phone"
-                      ><i class="far fa-heart"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <div class="filder__card">
-                <div class="card__status__top">Топ</div>
-                <img class="card__image" src="./images/src/image7.png" alt="" />
-                <div class="card__padding">
-                  <h4 class="card__text__filter">
-                    Стенка в гостинную Hyper коричневый ЛДСП
-                  </h4>
-                  <div class="card__list">
-                    <div class="card__info phone">
-                      <img src="./svg/location.svg" alt="" />
-                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
-                    </div>
-                    <div class="card__info phone">
-                      <img src="./svg/clock.svg" alt="" />
-                      <h5>Сегодня 11:25</h5>
-                    </div>
-                    <div class="card__info">
-                      <img src="./svg/tag.svg" alt="" />
-                      <h5>90 500 000 сум</h5>
-                    </div>
-                  </div>
-                  <div class="card__button">
-                    <a class="card__link" href="#">Подробнее</a>
-                    <a class="card__hover favorite" href="#">Избранное</a>
-                    <a href="#" class="card__hover favorite__phone"
-                      ><i class="far fa-heart"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <div class="filder__card">
-                <div class="card__status__top">Топ</div>
-                <img class="card__image" src="./images/src/image7.png" alt="" />
-                <div class="card__padding">
-                  <h4 class="card__text__filter">
-                    Стенка в гостинную Hyper коричневый ЛДСП
-                  </h4>
-                  <div class="card__list">
-                    <div class="card__info phone">
-                      <img src="./svg/location.svg" alt="" />
-                      <h5>Ташкент, Мирзо-Улугбекский район</h5>
-                    </div>
-                    <div class="card__info phone">
-                      <img src="./svg/clock.svg" alt="" />
-                      <h5>Сегодня 11:25</h5>
-                    </div>
-                    <div class="card__info">
-                      <img src="./svg/tag.svg" alt="" />
-                      <h5>90 500 000 сум</h5>
-                    </div>
-                  </div>
-                  <div class="card__button">
-                    <a class="card__link" href="#">Подробнее</a>
-                    <a class="card__hover favorite" href="#">Избранное</a>
-                    <a href="#" class="card__hover favorite__phone"
-                      ><i class="far fa-heart"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="premium__second"></div>
-        </div>
-      </div>
-    </div>
+    
     <div class="back__footer">
       <div class="wrapper">
         <div class="footer__first">

@@ -6,6 +6,14 @@ function myFunction() {
     x.style.display = "none";
   }
 }
+function dropdownFunction() {
+  var x = document.getElementById("dropdown");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 $(document).ready(function () {
   // $('body').hide()
 });
@@ -32,3 +40,10 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+$(".radioContainer").on("click", function (e) {
+  e.preventDefault();
+  $(".radioContainer").removeClass("active");
+  $(this).addClass("active");
+});
+new WOW().init();

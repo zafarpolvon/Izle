@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+
+    <!-- Подключаем стили проекта -->
+    <link rel="stylesheet" href="css/app.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="profile">
+      <header class="header">
+        <div class="wrapper">
+          <div class="header__main">
+            <a class="nav__logo" href="index.html">
+              <img src="./images/src/image_4-removebg-preview 1.png" alt="" />
+            </a>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="nav__item menu__profile">
+                  <a class="nav__link">Профиль</a>
+                  <div class="dmenu__box">
+                    <div class="dmenu__image">
+                      <img src="./images/src/dropdown.png" alt="" />
+                      <div class="dropdown__info">
+                        <h6>Shohrux Pirnazarov</h6>
+                        <p>ID: 12345678</p>
+                      </div>
+                    </div>
+                    <div class="dmenu__main wow slideInLeft">
+                      <h5 class="dmenu__title">Мой профиль:</h5>
+                      <a class="dmenu__link" href="profile.html">Объявления</a>
+                      <a class="dmenu__link" href="product.html">Сообщения</a>
+                      <a class="dmenu__link" href="payment.html"
+                        >Платежи и счет izle</a
+                      >
+                      <a class="dmenu__link" href="settings.html">Настройки</a>
+                      <h5 class="dmenu__title">Избранные:</h5>
+                      <a class="dmenu__link" href="chosen.html"
+                        >Объявления: 12</a
+                      >
+                      <a class="dmenu__link" href="chosenfilter.html"
+                        >Поиск: 10</a
+                      >
+                      <a class="dmenu__title" href="">Выйти</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="create.html">Подать объявления</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="nav__last">
+              <a onclick="dropdownFunction()" class="nav__saved">
+                <i class="far fa-bell"></i>
+                <span class="nav__saved__number">1</span>
+              </a>
+              <a class="nav__saved" href="#">
+                <i class="far fa-bookmark"></i>
+                <span class="nav__saved__number">1</span>
+              </a>
+              <div class="dropdown__box" id="dropdown">
+                <h5 class="dropdown__title">Сообщения</h5>
+                <ul class="dropdown__ul">
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      <div class="dropdown__image">
+                        <span class="nav__saved__dropdown">2</span>
+                        <img src="./images/src/dropdown.png" alt="" />
+                        <div class="dropdown__info">
+                          <h6>Shohrux Pirnazarov</h6>
+
+                          <p>Assolomu aleykum...</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="dropdown__flex">
+                      <span>05.08.2021</span>
+                      <span>17:05</span>
+                    </div>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      <div class="dropdown__image">
+                        <span class="nav__saved__dropdown">1</span>
+                        <img src="./images/src/dropdown.png" alt="" />
+                        <div class="dropdown__info">
+                          <h6>Shohrux Pirnazarov</h6>
+
+                          <p>Assolomu aleykum...</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="dropdown__flex">
+                      <span>05.08.2021</span>
+                      <span>17:05</span>
+                    </div>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      <div class="dropdown__image">
+                        <span class="nav__saved__dropdown">3</span>
+                        <img src="./images/src/dropdown.png" alt="" />
+                        <div class="dropdown__info">
+                          <h6>Shohrux Pirnazarov</h6>
+
+                          <p>Assolomu aleykum...</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="dropdown__flex">
+                      <span>05.08.2021</span>
+                      <span>17:05</span>
+                    </div>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      <div class="dropdown__image">
+                        <span class="nav__saved__dropdown">1</span>
+                        <img src="./images/src/dropdown.png" alt="" />
+                        <div class="dropdown__info">
+                          <h6>Shohrux Pirnazarov</h6>
+
+                          <p>Assolomu aleykum...</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="dropdown__flex">
+                      <span>05.08.2021</span>
+                      <span>17:05</span>
+                    </div>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      <div class="dropdown__image">
+                        <span class="nav__saved__dropdown">1</span>
+                        <img src="./images/src/dropdown.png" alt="" />
+                        <div class="dropdown__info">
+                          <h6>Shohrux Pirnazarov</h6>
+
+                          <p>Assolomu aleykum...</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="dropdown__flex">
+                      <span>05.08.2021</span>
+                      <span>17:05</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <select
+                class="nav__select"
+                name="language-picker-select"
+                id="language-picker-select"
+              >
+                <option lang="rus" value="ru" selected>RU</option>
+                <option lang="en" value="eng">Eng</option>
+                <option lang="uz" value="uz">UZ</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="payment">
+        <div class="wrapper">
+          <h3 class="payment__title">Пополнение счета</h3>
+          <div class="payment__box">
+            <div key="index" class="radioContainer">
+              <input value="first_checkbox" id="cbox1" type="checkbox" />
+              <label for="cbox1" class="circle">5 000 сум</label>
+            </div>
+            <div key="index" class="radioContainer">
+              <input value="first_checkb" id="cbox2" type="checkbox" />
+              <label for="cbox2" class="circle">10 000 сум</label>
+            </div>
+            <div key="index" class="radioContainer">
+              <input value="first_checkb" id="cbox3" type="checkbox" />
+              <label for="cbox3" class="circle">20 000 сум</label>
+            </div>
+            <div key="index" class="radioContainer">
+              <input value="first_checkb" id="cbox4" type="checkbox" />
+              <label for="cbox4" class="circle">30 000 сум</label>
+            </div>
+            <div key="index" class="radioContainer">
+              <input value="first_checkb" id="cbox5" type="checkbox" />
+              <label for="cbox5" class="circle">50 000 сум</label>
+            </div>
+            <div key="index" class="radioContainer">
+              <input value="first_checkb" id="cbox6" type="checkbox" />
+              <label for="cbox6" class="circle">60 000 сум</label>
+            </div>
+            <div key="index" class="radioContainer">
+              <input value="first_checkb" id="cbox7" type="checkbox" />
+              <label for="cbox7" class="circle">80 000 сум</label>
+            </div>
+            <div key="index" class="radioContainer">
+              <input value="first_checkb" id="cbox8" type="checkbox" />
+              <label for="cbox8" class="circle">100 000 сум</label>
+            </div>
+            <div key="index" class="radioContainer">
+              <input value="first_checkb" id="cbox9" type="checkbox" />
+              <label for="cbox9" class="circle">120 000 сум</label>
+            </div>
+            <div key="index" class="radioContainer">
+              <input value="first_checkb" id="cbox10" type="checkbox" />
+              <label for="cbox10" class="circle">200 000 сум</label>
+            </div>
+            <div key="index" class="radioContainer">
+              <input value="first_checkb" id="cbox11" type="checkbox" />
+              <label for="cbox11" class="circle">500 000 сум</label>
+            </div>
+            <div key="index" class="radioContainer">
+              <input value="first_checkb" id="cbox12" type="checkbox" />
+              <label for="cbox12" class="circle">1 000 000 сум</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="payment__pick">
+        <div class="wrapper">
+          <h4 class="pick__title">Выберите способ оплаты</h4>
+          <div class="payment__img">
+            <a href="#">
+              <img src="./images/src/payme.png" alt="" />
+            </a>
+            <a href="#">
+              <img src="./images/src/click.png" alt="" />
+            </a>
+            <a href="#">
+              <img src="./images/src/paynet.png" alt="" />
+            </a>
+          </div>
+          <div class="payment__button">
+            <button class="payment__first">Оплатить</button>
+            <button class="payment__cancel">Отмена</button>
+          </div>
+        </div>
+      </div>
+      <div class="back__footer">
+        <div class="wrapper">
+          <div class="footer__first">
+            <div class="footer__logo">
+              <img src="./images/src/image_4-removebg-preview 1.png" alt="" />
+            </div>
+            <div class="footer__catergories">
+              <ul class="footer__box">
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Мобильное приложения</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Помощь</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Платные услуги</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Бизнес на izle</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Реклама на сайте</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__catergories">
+              <ul class="footer__box">
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Условия использования</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#"
+                    >Политика конфиденциальности</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Партнеры</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Как продовать и покупать?</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Правила безопастности</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__catergories">
+              <ul class="footer__box">
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Карта сайта</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Карта регионов</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Карьера в izle</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Обратная связь</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">+99890 123-45-67</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__second">
+            <a class="footer__apple" href="#">
+              <img src="./images/src/appleapp.png" alt="" />
+            </a>
+            <a class="footer__android" href="#">
+              <img src="./images/src/googleapp.png" alt="" />
+            </a>
+          </div>
+          <div class="footer__social">
+            <a class="footer__social__link" href="#">
+              <i class="fab fa-vk"></i>
+            </a>
+            <a class="footer__social__link" href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a class="footer__social__link" href="#">
+              <i class="fab fa-telegram-plane"></i>
+            </a>
+            <a class="footer__social__link" href="#">
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+          <div class="footer__make">
+            <p>Ⓒ Copyright 2021 | Разработана в IT maker</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Подключаем скрипты проекта -->
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
