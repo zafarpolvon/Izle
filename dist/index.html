@@ -1,25 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
- 
-<head>
- 
-	<meta charset="UTF-8">
-	<title>Document</title>
- 
-	<!-- Подключаем стили проекта -->
-	<link rel="stylesheet" href="css/app.min.css">
- 
-</head>
- 
-<body>
- 
-	<p>Далеко-далеко за словесными горами в стране, гласных и согласных...</p>
- 
-	<!-- Подключаем оптимизированное изображение -->
-	<img src="images/dest/image.jpg" alt="Alt">
- 
-	<!-- Подключаем скрипты проекта -->
-	<script src="js/app.min.js"></script>
- 
-</body>
-</html>
+<div class="container">
+	<?php $i = 1; foreach ($hideproducts as $hideproduct): $images = HideProductImg::findAll(['product' => $hideproduct->id]); ?>
+	<?php if ($i == 10): ?>
+
+		<div class="clear hidden-xs"></div>
+		<div class="telegram-container wow fadeInUp text-center hidden-xs">
+			<a href="<?= $about->telegram_bot ?>" style="width: 100%">
+				<?php if ($currentLang->id == 1): ?>
+					<img src="/img/catalog/telegram.jpg" alt="telegram">
+				<?php elseif ($currentLang->id == 2): ?>
+					<img src="/img/catalog/telegram-ru.jpg" alt="telegram">
+				<?php elseif ($currentLang->id == 3): ?>
+					<img src="/img/catalog/telegram-en.jpg" alt="telegram">
+				<?php endif; ?>
+			</a>
+		</div>
+		<div class="clear visible-xs"></div>
+		<?php endif; ?>
+
+		<?php if ($currentLang->id == 1): ?>
+			<a href="<?= Url::toRoute(['site/view', 'id' => $hideproduct->id]) ?>">
+			  <div class="product wow fadeInUp hide_products <?= ($i % 3 == 0) ? "margin-0" : ""?> <?= ($i % 2 == 0) ? "margin-xs-0" : ""?>" id="<?= $hideproduct->name ?>">
+					<?php if ($hideproduct->badge): $badge = Badge::findOne($hideproduct->badge); if ($badge):?>
+						<div class="badge" style="color: <?= $badge->color ?>; background-color:<?= $badge->background_color ?>;"><?= $badge->text ?></div>
+					<?php endif;endif; ?>
+					<img src="/img/products/<?= $hideproduct->name ?>/<?= $images[0]->img ?>" class="product-img" alt="product">
+					<h4 class="fw-600">NOVEY <?= $hideproduct->name ?></h4>
+					<div class="colors link-small">
+						<?php foreach ($images as $img): $color = Color::findOne($img->color); ?>
+							<span class="product-color" style='background: <?= $color->code ?>'></span>
+						<?php endforeach; ?>
+						<?= (count($images) > 1) ? count($images)." ".Yii::t('app', 'ranglar') : "1 ".Yii::t('app', 'rang') ?>
+					</div>
+					<ul class="body-small advantages">
+						<?= $hideproduct->triple ?>
+					</ul>
+					<div class="buttons-container">
+						<a href="<?= Url::toRoute(['site/view', 'id' => $hideproduct->id]) ?>" class="button-normal view-button"><?= Yii::t('app', 'Batafsil') ?> 
+						  <img src="/img/icons/svg/arrow-right.svg" alt="arrow-right"></a>
+						<a href="<?= $about->telegram_bot ?>" class="button-normal telegram" target="_blank"><img src="/img/icons/svg/telegram.svg" alt="telegram"></a>
+					</div>
+				</div>
+			</a>
+		  <?php elseif ($currentLang->id == 2): ?>
+			<a href="<?= Url::toRoute(['site/view', 'id' => $hideproduct->id]) ?>">
+			  <div class="product wow fadeInUp hide_products<?= ($i % 3 == 0) ? "margin-0" : ""?> <?= ($i % 2 == 0) ? "margin-xs-0" : ""?>" id="<?= $hideproduct->name ?>">
+					<?php if ($hideproduct->badge): $badge = Badge::findOne($hideproduct->badge); if ($badge):?>
+						<div class="badge" style="color: <?= $badge->color ?>; background-color:<?= $badge->background_color ?>;"><?= $badge->text ?></div>
+					<?php endif;endif; ?>
+					<img src="/img/products/<?= $hideproduct->name ?>/<?= $images[0]->img ?>" class="product-img" alt="product">
+					<h4 class="fw-600">NOVEY <?= $hideproduct->name ?></h4>
+					<div class="colors link-small">
+						<?php foreach ($images as $img): $color = Color::findOne($img->color); ?>
+							<span class="product-color" style='background: <?= $color->code ?>'></span>
+						<?php endforeach; ?>
+						<?= (count($images) > 1) ? count($images)." ".Yii::t('app', 'ranglar') : "1 ".Yii::t('app', 'rang') ?>
+					</div>
+					<ul class="body-small advantages">
+						<?= $hideproduct->triple ?>
+					</ul>
+					<div class="buttons-container">
+						<a href="<?= Url::toRoute(['site/view', 'id' => $hideproduct->id]) ?>" class="button-normal view-button"><?= Yii::t('app', 'Batafsil') ?> 
+						  <img src="/img/icons/svg/arrow-right.svg" alt="arrow-right"></a>
+						<a href="<?= $about->telegram_bot ?>" class="button-normal telegram" target="_blank"><img src="/img/icons/svg/telegram.svg" alt="telegram"></a>
+					</div>
+				</div>
+			</a>
+			<?php elseif ($currentLang->id == 3): ?>
+			<a href="<?= Url::toRoute(['site/view', 'id' => $hideproduct->id]) ?>">
+			  <div class="product wow fadeInUp hide_products <?= ($i % 3 == 0) ? "margin-0" : ""?> <?= ($i % 2 == 0) ? "margin-xs-0" : ""?>" id="<?= $hideproduct->name ?>">
+					<?php if ($hideproduct->badge): $badge = Badge::findOne($hideproduct->badge); if ($badge):?>
+						<div class="badge" style="color: <?= $badge->color ?>; background-color:<?= $badge->background_color ?>;"><?= $badge->text ?></div>
+					<?php endif;endif; ?>
+					<img src="/img/products/<?= $hideproduct->name ?>/<?= $images[0]->img ?>" class="product-img" alt="product">
+					<h4 class="fw-600">NOVEY <?= $hideproduct->name ?></h4>
+					<div class="colors link-small">
+						<?php foreach ($images as $img): $color = Color::findOne($img->color); ?>
+							<span class="product-color" style='background: <?= $color->code ?>'></span>
+						<?php endforeach; ?>
+						<?= (count($images) > 1) ? count($images)." ".Yii::t('app', 'ranglar') : "1 ".Yii::t('app', 'rang') ?>
+					</div>
+					<ul class="body-small advantages">
+						<?= $hideproduct->triple ?>
+					</ul>
+					<div class="buttons-container">
+						<a href="<?= Url::toRoute(['site/view', 'id' => $hideproduct->id]) ?>" class="button-normal view-button"><?= Yii::t('app', 'Batafsil') ?> 
+						  <img src="/img/icons/svg/arrow-right.svg" alt="arrow-right"></a>
+						<a href="<?= $about->telegram_bot ?>" class="button-normal telegram" target="_blank"><img src="/img/icons/svg/telegram.svg" alt="telegram"></a>
+					</div>
+				</div>
+			</a>
+		  <?php endif ?>
+</div> 
+
+	<?php endforeach; ?>
+	<div class="clear hidden-xs"></div>
