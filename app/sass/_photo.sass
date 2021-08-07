@@ -19,6 +19,8 @@
     flex-direction: row
     justify-content: space-between
     margin-top: 20px
+    @media (max-width: 1068px)
+      flex-wrap: wrap
   &__title
     h6
       font-family: 'Lato', sans-serif
@@ -39,9 +41,15 @@
   &__col
     width: 270px
     height: 180px
+    @media (max-width: 1068px)
+      width: 48%
+      margin-top: 10px
+
     img
       width: 270px
       height: 180px
+      @media (max-width: 1068px)
+        width: 100%
     &__input
       width: 270px
       height: 180px
@@ -49,6 +57,8 @@
       display: flex
       align-items: center
       border-radius: 10px
+      @media (max-width: 1068px)
+        width: 100%
       label
         text-align: center
         margin: 0 auto
@@ -109,6 +119,8 @@
     font-size: 18px
     line-height: 22px
     color: rgba(97, 97, 97, 0.8)
+    @media (max-width: 1068px)
+      width: 100%
   &__limit
     position: absolute
     margin-left: -80px
@@ -127,13 +139,15 @@
     justify-content: space-between
     padding-bottom: 40px
     padding-top: 10px
+    @media (max-width: 1068px)
+      flex-direction: column
 .textarea__message
   position: relative
 .contact
   &__info
     display: flex
     flex-direction: column 
-    @media (max-width: 640px)
+    @media (max-width: 1068px)
       display: flex
       flex-direction: column
     h5
@@ -163,7 +177,7 @@
       font-size: 18px
       line-height: 29px
       padding: 5px 10px
-      @media (max-width: 640px)
+      @media (max-width: 1068px)
         width: 100%
       @media (max-width: 1024px)
         width: 100%

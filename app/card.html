@@ -1,611 +1,566 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Document</title>
     <link rel="stylesheet" href="css/app.min.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
-    />
-  </head>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+</head>
 
-  <body>
+<body>
     <div class="card__bacground">
-      <header class="header">
-        <div class="wrapper">
-          <div class="header__main">
-            <a class="nav__logo" href="index.html">
-              <img src="./images/src/image_4-removebg-preview 1.png" alt="" />
-            </a>
-            <nav class="nav">
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a class="nav__link" href="index.html">Главная</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="filter.html">Категории</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="card.html">Тарифы</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="profile.html">Аккаунт</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="nav__last">
-              <a class="nav__input" href="#">Войти</a>
-              <select
-                class="nav__select"
-                name="language-picker-select"
-                id="language-picker-select"
-              >
+        <header class="header">
+            <div class="wrapper">
+                <div class="header__main">
+                    <a class="nav__logo" href="index.html">
+                        <img src="./images/src/image_4-removebg-preview 1.png" alt="" />
+                    </a>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link" href="index.html">Главная</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="filter.html">Категории</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="card.html">Тарифы</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="profile.html">Аккаунт</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="nav__last">
+                        <a class="nav__input" href="#">Войти</a>
+                        <select class="nav__select" name="language-picker-select" id="language-picker-select">
                 <option lang="rus" value="ru" selected>RU</option>
                 <option lang="en" value="eng">Eng</option>
                 <option lang="uz" value="uz">UZ</option>
               </select>
-            </div>
-          </div>
-        </div>
-      </header>
-      <div class="search__filter">
-        <div class="wrapper">
-          <div class="filter">
-            <div class="filter__par">
-              <h3>О товаре</h3>
-            </div>
-            <div class="filter__header">
-              <a class="filter__link" href="#">Все объявления</a>
-              <a class="filter__link" href="#">Детский мир</a>
-              <a class="filter__link" href="#">Продажа детской одежды</a>
-              <a class="filter__link" href="#">Одежда для девочек</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="wrapper">
-        <div class="ads__first">
-          <a href="#">
-            <img src="./images/src/ads1.png" alt="" />
-          </a>
-        </div>
-      </div>
-      <div class="about__things">
-        <div class="wrapper">
-          <div class="about">
-            <div class="about__info">
-              <div class="swiper-container mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="./images/src/image 17.png" alt="" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/src/image 17.png" alt="" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/src/image 17.png" alt="" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/src/image 17.png" alt="" />
-                  </div>
+                    </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-              </div>
-              <div class="about__save">
-                <a href="#" class="about__bookmark">
-                  <i class="far fa-bookmark"></i>
+            </div>
+        </header>
+        <div class="search__filter">
+            <div class="wrapper">
+                <div class="filter">
+                    <div class="filter__par">
+                        <h3>О товаре</h3>
+                    </div>
+                    <div class="filter__header">
+                        <a class="filter__link" href="#">Все объявления</a>
+                        <a class="filter__link" href="#">Детский мир</a>
+                        <a class="filter__link" href="#">Продажа детской одежды</a>
+                        <a class="filter__link" href="#">Одежда для девочек</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="ads__first">
+                <a href="#">
+                    <img src="./images/src/ads1.png" alt="" />
                 </a>
-                <a
-                  href="./images/src/image 17.png"
-                  class="about__fullscreen"
-                  data-fancybox="gallery"
-                  data-caption="Optional caption"
-                >
-                  <img src="./svg/fullscreen.svg" alt="" />
-                </a>
-              </div>
             </div>
-            <div class="about__info__2">
-              <h5 class="about__title">Платье для девочки. Турция</h5>
-              <h3 class="about__cost">190 000 сум</h3>
-              <p class="about__text">
-                Размеры с 2 до 5 лет, с единорогом на 2/3 года только Есть канал
-                детской одежды в Телеграм. Всё в наличии. Пишите сброшу ссылку.
-                Описание описание описание описание описание Описание описание
-                описание описание
-              </p>
-              <div class="about__link">
-                <a href="#">Частное лицо</a>
-                <a href="#">Состояние новые</a>
-                <a href="#">Размер 1</a>
-              </div>
-              <a class="about__complain" href="#">Пожаловаться</a>
-              <div class="about__footer">
-                <h6>Опубликовано 23 июля 2021 г.</h6>
-                <h6>ID: 12345678</h6>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="about__box">
-        <div class="wrapper">
-          <div class="about">
-            <div class="white__info">
-              <h5 class="white__title">Пользователь</h5>
-              <div class="about__user">
-                <div class="user__img">
-                  <img src="./images/src/user (1) 1.png" alt="" />
+        <div class="about__things">
+            <div class="wrapper">
+                <div class="about">
+                    <div class="about__info">
+                        <div class="swiper-container mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./images/src/image 17.png" alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/src/image 17.png" alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/src/image 17.png" alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/src/image 17.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div class="about__save">
+                            <a href="#" class="about__bookmark">
+                                <i class="far fa-bookmark"></i>
+                            </a>
+                            <a href="./images/src/image 17.png" class="about__fullscreen" data-fancybox="gallery" data-caption="Optional caption">
+                                <img src="./svg/fullscreen.svg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about__info__2">
+                        <h5 class="about__title">Платье для девочки. Турция</h5>
+                        <h3 class="about__cost">190 000 сум</h3>
+                        <p class="about__text">
+                            Размеры с 2 до 5 лет, с единорогом на 2/3 года только Есть канал детской одежды в Телеграм. Всё в наличии. Пишите сброшу ссылку. Описание описание описание описание описание Описание описание описание описание
+                        </p>
+                        <div class="about__link">
+                            <a href="#">Частное лицо</a>
+                            <a href="#">Состояние новые</a>
+                            <a href="#">Размер 1</a>
+                        </div>
+                        <div class="about__footer">
+                            <a class="about__complain" href="#">Пожаловаться</a>
+                            <h6>Опубликовано 23 июля 2021 г.</h6>
+                            <h6>ID: 12345678</h6>
+                        </div>
+                    </div>
                 </div>
-                <div class="user__info">
-                  <h6>Азиз Ассомов</h6>
-                  <p>был(а) вчера 19:35</p>
-                </div>
-              </div>
-              <textarea
-                class="user__message"
-                placeholder="Напишите сообщения"
-                name=""
-                id=""
-                cols="30"
-                rows="10"
-              ></textarea>
-              <div class="user__contact">
-                <div class="user__item">
-                  <a class="user__link" href="#">
-                    <img src="./svg/call.svg" alt="" />
-                    <span class="user__number" cla>+998(90) 123-45-67</span>
-                  </a>
-                </div>
-                <div class="user__send">
-                  <a href="#">Отправить</a>
-                </div>
-              </div>
-              <div class="about__user">
-                <div class="user__file">
-                  <img for="file-input" src="./svg/file.svg" alt="" />
-                </div>
-                <div class="user__file__name">
-                  <h6>Объединить файл</h6>
-                  <p>Вы можете прикрепить файлы в формате: jpg, png, jpeg</p>
-                </div>
-              </div>
             </div>
-            <div class="white__info">
-              <h5 class="user__location">Местоположения</h5>
-              <a class="location__name" href="#">
-                <i class="fas fa-map-marker-alt"></i>
-                г.Ташкент Шайхантахурский район
-              </a>
-              <img class="location__image" src="./images/src/map.png" alt="" />
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="cards">
-        <div class="wrapper">
-          <h2 class="cards__header">Все объявления автора</h2>
+        <div class="about__box">
+            <div class="wrapper">
+                <div class="about">
+                    <div class="white__info">
+                        <h5 class="white__title">Пользователь</h5>
+                        <div class="about__user">
+                            <div class="user__img">
+                                <img src="./images/src/user (1) 1.png" alt="" />
+                            </div>
+                            <div class="user__info">
+                                <h6>Азиз Ассомов</h6>
+                                <p>был(а) вчера 19:35</p>
+                            </div>
+                        </div>
+                        <textarea class="user__message" placeholder="Напишите сообщения" name="" id="" cols="30" rows="10"></textarea>
+                        <div class="user__contact">
+                            <div class="user__item">
+                                <a class="user__link" href="#">
+                                    <img src="./svg/call.svg" alt="" />
+                                    <span class="user__number" cla>+998(90) 123-45-67</span>
+                                </a>
+                            </div>
+                            <div class="user__send">
+                                <a href="#">Отправить</a>
+                            </div>
+                        </div>
+                        <div class="about__user">
+                            <div class="user__file">
+                                <img for="file-input" src="./svg/file.svg" alt="" />
+                            </div>
+                            <div class="user__file__name">
+                                <h6>Объединить файл</h6>
+                                <p>Вы можете прикрепить файлы в формате: jpg, png, jpeg</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white__info">
+                        <h5 class="user__location">Местоположения</h5>
+                        <a class="location__name" href="#">
+                            <i class="fas fa-map-marker-alt"></i> г.Ташкент Шайхантахурский район
+                        </a>
+                        <img class="location__image" src="./images/src/map.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="wrapper">
+                <h2 class="cards__header">Все объявления автора</h2>
 
-          <div class="cards__box">
-            <div class="card">
-              <div class="card__status">Премиум</div>
-              <img class="card__image" src="./images/src/image1.png" alt="" />
-              <div class="card__padding">
-                <h4 class="card__text">
-                  Стенка в гостинную Hyper коричневый ЛДСП
-                </h4>
-                <div class="card__list">
-                  <div class="card__info phone">
-                    <img src="./svg/location.svg" alt="" />
-                    <h5>Ташкент, Мирзо-Улугбекский район</h5>
-                  </div>
-                  <div class="card__info phone">
-                    <img src="./svg/clock.svg" alt="" />
-                    <h5>Сегодня 11:25</h5>
-                  </div>
-                  <div class="card__info">
-                    <img src="./svg/tag.svg" alt="" />
-                    <h5>90 500 000 сум</h5>
-                  </div>
-                </div>
-                <div class="card__button">
-                  <a class="card__link" href="#">Подробнее</a>
-                  <a class="card__hover favorite" href="#">Избранное</a>
-                  <a href="#" class="card__hover favorite__phone"
-                    ><i class="far fa-heart"></i
+                <div class="cards__box">
+                    <div class="card">
+                        <div class="card__status">Премиум</div>
+                        <img class="card__image" src="./images/src/image1.png" alt="" />
+                        <div class="card__padding">
+                            <h4 class="card__text">
+                                Стенка в гостинную Hyper коричневый ЛДСП
+                            </h4>
+                            <div class="card__list">
+                                <div class="card__info phone">
+                                    <img src="./svg/location.svg" alt="" />
+                                    <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                                </div>
+                                <div class="card__info phone">
+                                    <img src="./svg/clock.svg" alt="" />
+                                    <h5>Сегодня 11:25</h5>
+                                </div>
+                                <div class="card__info">
+                                    <img src="./svg/tag.svg" alt="" />
+                                    <h5>90 500 000 сум</h5>
+                                </div>
+                            </div>
+                            <div class="card__button">
+                                <a class="card__link" href="#">Подробнее</a>
+                                <a class="card__hover favorite" href="#">Избранное</a>
+                                <a href="#" class="card__hover favorite__phone"><i class="far fa-heart"></i
                   ></a>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__status">Премиум</div>
-              <img class="card__image" src="./images/src/image1.png" alt="" />
-              <div class="card__padding">
-                <h4 class="card__text">
-                  Стенка в гостинную Hyper коричневый ЛДСП
-                </h4>
-                <div class="card__list">
-                  <div class="card__info phone">
-                    <img src="./svg/location.svg" alt="" />
-                    <h5>Ташкент, Мирзо-Улугбекский район</h5>
-                  </div>
-                  <div class="card__info phone">
-                    <img src="./svg/clock.svg" alt="" />
-                    <h5>Сегодня 11:25</h5>
-                  </div>
-                  <div class="card__info">
-                    <img src="./svg/tag.svg" alt="" />
-                    <h5>90 500 000 сум</h5>
-                  </div>
-                </div>
-                <div class="card__button">
-                  <a class="card__link" href="#">Подробнее</a>
-                  <a class="card__hover favorite" href="#">Избранное</a>
-                  <a href="#" class="card__hover favorite__phone"
-                    ><i class="far fa-heart"></i
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__status">Премиум</div>
+                        <img class="card__image" src="./images/src/image1.png" alt="" />
+                        <div class="card__padding">
+                            <h4 class="card__text">
+                                Стенка в гостинную Hyper коричневый ЛДСП
+                            </h4>
+                            <div class="card__list">
+                                <div class="card__info phone">
+                                    <img src="./svg/location.svg" alt="" />
+                                    <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                                </div>
+                                <div class="card__info phone">
+                                    <img src="./svg/clock.svg" alt="" />
+                                    <h5>Сегодня 11:25</h5>
+                                </div>
+                                <div class="card__info">
+                                    <img src="./svg/tag.svg" alt="" />
+                                    <h5>90 500 000 сум</h5>
+                                </div>
+                            </div>
+                            <div class="card__button">
+                                <a class="card__link" href="#">Подробнее</a>
+                                <a class="card__hover favorite" href="#">Избранное</a>
+                                <a href="#" class="card__hover favorite__phone"><i class="far fa-heart"></i
                   ></a>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__status">Премиум</div>
-              <img class="card__image" src="./images/src/image1.png" alt="" />
-              <div class="card__padding">
-                <h4 class="card__text">
-                  Стенка в гостинную Hyper коричневый ЛДСП
-                </h4>
-                <div class="card__list">
-                  <div class="card__info phone">
-                    <img src="./svg/location.svg" alt="" />
-                    <h5>Ташкент, Мирзо-Улугбекский район</h5>
-                  </div>
-                  <div class="card__info phone">
-                    <img src="./svg/clock.svg " alt="" />
-                    <h5>Сегодня 11:25</h5>
-                  </div>
-                  <div class="card__info">
-                    <img src="./svg/tag.svg" alt="" />
-                    <h5>90 500 000 сум</h5>
-                  </div>
-                </div>
-                <div class="card__button">
-                  <a class="card__link" href="#">Подробнее</a>
-                  <a class="card__hover favorite" href="#">Избранное</a>
-                  <a href="#" class="card__hover favorite__phone"
-                    ><i class="far fa-heart"></i
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__status">Премиум</div>
+                        <img class="card__image" src="./images/src/image1.png" alt="" />
+                        <div class="card__padding">
+                            <h4 class="card__text">
+                                Стенка в гостинную Hyper коричневый ЛДСП
+                            </h4>
+                            <div class="card__list">
+                                <div class="card__info phone">
+                                    <img src="./svg/location.svg" alt="" />
+                                    <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                                </div>
+                                <div class="card__info phone">
+                                    <img src="./svg/clock.svg " alt="" />
+                                    <h5>Сегодня 11:25</h5>
+                                </div>
+                                <div class="card__info">
+                                    <img src="./svg/tag.svg" alt="" />
+                                    <h5>90 500 000 сум</h5>
+                                </div>
+                            </div>
+                            <div class="card__button">
+                                <a class="card__link" href="#">Подробнее</a>
+                                <a class="card__hover favorite" href="#">Избранное</a>
+                                <a href="#" class="card__hover favorite__phone"><i class="far fa-heart"></i
                   ></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="cards__show">
+                    <button class="cards__button">Посмотреть все</button>
+                </div>
             </div>
-          </div>
-          <div class="cards__show">
-            <button class="cards__button">Посмотреть все</button>
-          </div>
         </div>
-      </div>
-      <div class="cards">
-        <div class="wrapper">
-          <h2 class="cards__header">Похожие объявления</h2>
+        <div class="cards">
+            <div class="wrapper">
+                <h2 class="cards__header">Похожие объявления</h2>
 
-          <div class="cards__box">
-            <div class="card">
-              <div class="card__status">Премиум</div>
-              <img class="card__image" src="./images/src/image1.png" alt="" />
-              <div class="card__padding">
-                <h4 class="card__text">
-                  Стенка в гостинную Hyper коричневый ЛДСП
-                </h4>
-                <div class="card__list">
-                  <div class="card__info phone">
-                    <img src="./svg/location.svg" alt="" />
-                    <h5>Ташкент, Мирзо-Улугбекский район</h5>
-                  </div>
-                  <div class="card__info phone">
-                    <img src="./svg/clock.svg" alt="" />
-                    <h5>Сегодня 11:25</h5>
-                  </div>
-                  <div class="card__info">
-                    <img src="./svg/tag.svg" alt="" />
-                    <h5>90 500 000 сум</h5>
-                  </div>
-                </div>
-                <div class="card__button">
-                  <a class="card__link" href="#">Подробнее</a>
-                  <a class="card__hover favorite" href="#">Избранное</a>
-                  <a href="#" class="card__hover favorite__phone"
-                    ><i class="far fa-heart"></i
+                <div class="cards__box">
+                    <div class="card">
+                        <div class="card__status">Премиум</div>
+                        <img class="card__image" src="./images/src/image1.png" alt="" />
+                        <div class="card__padding">
+                            <h4 class="card__text">
+                                Стенка в гостинную Hyper коричневый ЛДСП
+                            </h4>
+                            <div class="card__list">
+                                <div class="card__info phone">
+                                    <img src="./svg/location.svg" alt="" />
+                                    <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                                </div>
+                                <div class="card__info phone">
+                                    <img src="./svg/clock.svg" alt="" />
+                                    <h5>Сегодня 11:25</h5>
+                                </div>
+                                <div class="card__info">
+                                    <img src="./svg/tag.svg" alt="" />
+                                    <h5>90 500 000 сум</h5>
+                                </div>
+                            </div>
+                            <div class="card__button">
+                                <a class="card__link" href="#">Подробнее</a>
+                                <a class="card__hover favorite" href="#">Избранное</a>
+                                <a href="#" class="card__hover favorite__phone"><i class="far fa-heart"></i
                   ></a>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__status">Премиум</div>
-              <img class="card__image" src="./images/src/image1.png" alt="" />
-              <div class="card__padding">
-                <h4 class="card__text">
-                  Стенка в гостинную Hyper коричневый ЛДСП
-                </h4>
-                <div class="card__list">
-                  <div class="card__info phone">
-                    <img src="./svg/location.svg" alt="" />
-                    <h5>Ташкент, Мирзо-Улугбекский район</h5>
-                  </div>
-                  <div class="card__info phone">
-                    <img src="./svg/clock.svg" alt="" />
-                    <h5>Сегодня 11:25</h5>
-                  </div>
-                  <div class="card__info">
-                    <img src="./svg/tag.svg" alt="" />
-                    <h5>90 500 000 сум</h5>
-                  </div>
-                </div>
-                <div class="card__button">
-                  <a class="card__link" href="#">Подробнее</a>
-                  <a class="card__hover favorite" href="#">Избранное</a>
-                  <a href="#" class="card__hover favorite__phone"
-                    ><i class="far fa-heart"></i
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__status">Премиум</div>
+                        <img class="card__image" src="./images/src/image1.png" alt="" />
+                        <div class="card__padding">
+                            <h4 class="card__text">
+                                Стенка в гостинную Hyper коричневый ЛДСП
+                            </h4>
+                            <div class="card__list">
+                                <div class="card__info phone">
+                                    <img src="./svg/location.svg" alt="" />
+                                    <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                                </div>
+                                <div class="card__info phone">
+                                    <img src="./svg/clock.svg" alt="" />
+                                    <h5>Сегодня 11:25</h5>
+                                </div>
+                                <div class="card__info">
+                                    <img src="./svg/tag.svg" alt="" />
+                                    <h5>90 500 000 сум</h5>
+                                </div>
+                            </div>
+                            <div class="card__button">
+                                <a class="card__link" href="#">Подробнее</a>
+                                <a class="card__hover favorite" href="#">Избранное</a>
+                                <a href="#" class="card__hover favorite__phone"><i class="far fa-heart"></i
                   ></a>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__status">Премиум</div>
-              <img class="card__image" src="./images/src/image1.png" alt="" />
-              <div class="card__padding">
-                <h4 class="card__text">
-                  Стенка в гостинную Hyper коричневый ЛДСП
-                </h4>
-                <div class="card__list">
-                  <div class="card__info phone">
-                    <img src="./svg/location.svg" alt="" />
-                    <h5>Ташкент, Мирзо-Улугбекский район</h5>
-                  </div>
-                  <div class="card__info phone">
-                    <img src="./svg/clock.svg " alt="" />
-                    <h5>Сегодня 11:25</h5>
-                  </div>
-                  <div class="card__info">
-                    <img src="./svg/tag.svg" alt="" />
-                    <h5>90 500 000 сум</h5>
-                  </div>
-                </div>
-                <div class="card__button">
-                  <a class="card__link" href="#">Подробнее</a>
-                  <a class="card__hover favorite" href="#">Избранное</a>
-                  <a href="#" class="card__hover favorite__phone"
-                    ><i class="far fa-heart"></i
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__status">Премиум</div>
+                        <img class="card__image" src="./images/src/image1.png" alt="" />
+                        <div class="card__padding">
+                            <h4 class="card__text">
+                                Стенка в гостинную Hyper коричневый ЛДСП
+                            </h4>
+                            <div class="card__list">
+                                <div class="card__info phone">
+                                    <img src="./svg/location.svg" alt="" />
+                                    <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                                </div>
+                                <div class="card__info phone">
+                                    <img src="./svg/clock.svg " alt="" />
+                                    <h5>Сегодня 11:25</h5>
+                                </div>
+                                <div class="card__info">
+                                    <img src="./svg/tag.svg" alt="" />
+                                    <h5>90 500 000 сум</h5>
+                                </div>
+                            </div>
+                            <div class="card__button">
+                                <a class="card__link" href="#">Подробнее</a>
+                                <a class="card__hover favorite" href="#">Избранное</a>
+                                <a href="#" class="card__hover favorite__phone"><i class="far fa-heart"></i
                   ></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="cards__show">
+                    <button class="cards__button">Посмотреть все</button>
+                </div>
             </div>
-          </div>
-          <div class="cards__show">
-            <button class="cards__button">Посмотреть все</button>
-          </div>
         </div>
-      </div>
-      <div class="cards">
-        <div class="wrapper">
-          <h2 class="cards__header">Недавно просмотренные</h2>
+        <div class="cards">
+            <div class="wrapper">
+                <h2 class="cards__header">Недавно просмотренные</h2>
 
-          <div class="cards__box">
-            <div class="card">
-              <div class="card__status">Премиум</div>
-              <img class="card__image" src="./images/src/image1.png" alt="" />
-              <div class="card__padding">
-                <h4 class="card__text">
-                  Стенка в гостинную Hyper коричневый ЛДСП
-                </h4>
-                <div class="card__list">
-                  <div class="card__info phone">
-                    <img src="./svg/location.svg" alt="" />
-                    <h5>Ташкент, Мирзо-Улугбекский район</h5>
-                  </div>
-                  <div class="card__info phone">
-                    <img src="./svg/clock.svg" alt="" />
-                    <h5>Сегодня 11:25</h5>
-                  </div>
-                  <div class="card__info">
-                    <img src="./svg/tag.svg" alt="" />
-                    <h5>90 500 000 сум</h5>
-                  </div>
-                </div>
-                <div class="card__button">
-                  <a class="card__link" href="#">Подробнее</a>
-                  <a class="card__hover favorite" href="#">Избранное</a>
-                  <a href="#" class="card__hover favorite__phone"
-                    ><i class="far fa-heart"></i
+                <div class="cards__box">
+                    <div class="card">
+                        <div class="card__status">Премиум</div>
+                        <img class="card__image" src="./images/src/image1.png" alt="" />
+                        <div class="card__padding">
+                            <h4 class="card__text">
+                                Стенка в гостинную Hyper коричневый ЛДСП
+                            </h4>
+                            <div class="card__list">
+                                <div class="card__info phone">
+                                    <img src="./svg/location.svg" alt="" />
+                                    <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                                </div>
+                                <div class="card__info phone">
+                                    <img src="./svg/clock.svg" alt="" />
+                                    <h5>Сегодня 11:25</h5>
+                                </div>
+                                <div class="card__info">
+                                    <img src="./svg/tag.svg" alt="" />
+                                    <h5>90 500 000 сум</h5>
+                                </div>
+                            </div>
+                            <div class="card__button">
+                                <a class="card__link" href="#">Подробнее</a>
+                                <a class="card__hover favorite" href="#">Избранное</a>
+                                <a href="#" class="card__hover favorite__phone"><i class="far fa-heart"></i
                   ></a>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__status">Премиум</div>
-              <img class="card__image" src="./images/src/image1.png" alt="" />
-              <div class="card__padding">
-                <h4 class="card__text">
-                  Стенка в гостинную Hyper коричневый ЛДСП
-                </h4>
-                <div class="card__list">
-                  <div class="card__info phone">
-                    <img src="./svg/location.svg" alt="" />
-                    <h5>Ташкент, Мирзо-Улугбекский район</h5>
-                  </div>
-                  <div class="card__info phone">
-                    <img src="./svg/clock.svg" alt="" />
-                    <h5>Сегодня 11:25</h5>
-                  </div>
-                  <div class="card__info">
-                    <img src="./svg/tag.svg" alt="" />
-                    <h5>90 500 000 сум</h5>
-                  </div>
-                </div>
-                <div class="card__button">
-                  <a class="card__link" href="#">Подробнее</a>
-                  <a class="card__hover favorite" href="#">Избранное</a>
-                  <a href="#" class="card__hover favorite__phone"
-                    ><i class="far fa-heart"></i
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__status">Премиум</div>
+                        <img class="card__image" src="./images/src/image1.png" alt="" />
+                        <div class="card__padding">
+                            <h4 class="card__text">
+                                Стенка в гостинную Hyper коричневый ЛДСП
+                            </h4>
+                            <div class="card__list">
+                                <div class="card__info phone">
+                                    <img src="./svg/location.svg" alt="" />
+                                    <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                                </div>
+                                <div class="card__info phone">
+                                    <img src="./svg/clock.svg" alt="" />
+                                    <h5>Сегодня 11:25</h5>
+                                </div>
+                                <div class="card__info">
+                                    <img src="./svg/tag.svg" alt="" />
+                                    <h5>90 500 000 сум</h5>
+                                </div>
+                            </div>
+                            <div class="card__button">
+                                <a class="card__link" href="#">Подробнее</a>
+                                <a class="card__hover favorite" href="#">Избранное</a>
+                                <a href="#" class="card__hover favorite__phone"><i class="far fa-heart"></i
                   ></a>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__status">Премиум</div>
-              <img class="card__image" src="./images/src/image1.png" alt="" />
-              <div class="card__padding">
-                <h4 class="card__text">
-                  Стенка в гостинную Hyper коричневый ЛДСП
-                </h4>
-                <div class="card__list">
-                  <div class="card__info phone">
-                    <img src="./svg/location.svg" alt="" />
-                    <h5>Ташкент, Мирзо-Улугбекский район</h5>
-                  </div>
-                  <div class="card__info phone">
-                    <img src="./svg/clock.svg " alt="" />
-                    <h5>Сегодня 11:25</h5>
-                  </div>
-                  <div class="card__info">
-                    <img src="./svg/tag.svg" alt="" />
-                    <h5>90 500 000 сум</h5>
-                  </div>
-                </div>
-                <div class="card__button">
-                  <a class="card__link" href="#">Подробнее</a>
-                  <a class="card__hover favorite" href="#">Избранное</a>
-                  <a href="#" class="card__hover favorite__phone"
-                    ><i class="far fa-heart"></i
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__status">Премиум</div>
+                        <img class="card__image" src="./images/src/image1.png" alt="" />
+                        <div class="card__padding">
+                            <h4 class="card__text">
+                                Стенка в гостинную Hyper коричневый ЛДСП
+                            </h4>
+                            <div class="card__list">
+                                <div class="card__info phone">
+                                    <img src="./svg/location.svg" alt="" />
+                                    <h5>Ташкент, Мирзо-Улугбекский район</h5>
+                                </div>
+                                <div class="card__info phone">
+                                    <img src="./svg/clock.svg " alt="" />
+                                    <h5>Сегодня 11:25</h5>
+                                </div>
+                                <div class="card__info">
+                                    <img src="./svg/tag.svg" alt="" />
+                                    <h5>90 500 000 сум</h5>
+                                </div>
+                            </div>
+                            <div class="card__button">
+                                <a class="card__link" href="#">Подробнее</a>
+                                <a class="card__hover favorite" href="#">Избранное</a>
+                                <a href="#" class="card__hover favorite__phone"><i class="far fa-heart"></i
                   ></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="cards__show">
+                    <button class="cards__button">Посмотреть все</button>
+                </div>
             </div>
-          </div>
-          <div class="cards__show">
-            <button class="cards__button">Посмотреть все</button>
-          </div>
         </div>
-      </div>
-      <div class="back__footer">
-        <div class="wrapper">
-          <div class="footer__first">
-            <div class="footer__logo">
-              <img src="./images/src/image_4-removebg-preview 1.png" alt="" />
-            </div>
-            <div class="footer__catergories">
-              <ul class="footer__box">
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Мобильное приложения</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Помощь</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Платные услуги</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Бизнес на izle</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Реклама на сайте</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__catergories">
-              <ul class="footer__box">
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Условия использования</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#"
-                    >Политика конфиденциальности</a
+        <div class="back__footer">
+            <div class="wrapper">
+                <div class="footer__first">
+                    <div class="footer__logo">
+                        <img src="./images/src/image_4-removebg-preview 1.png" alt="" />
+                    </div>
+                    <div class="footer__catergories">
+                        <ul class="footer__box">
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Мобильное приложения</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Помощь</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Платные услуги</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Бизнес на izle</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Реклама на сайте</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__catergories">
+                        <ul class="footer__box">
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Условия использования</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Политика конфиденциальности</a
                   >
                 </li>
                 <li class="footer__item">
                   <a class="footer__link" href="#">Партнеры</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Как продовать и покупать?</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Правила безопастности</a>
-                </li>
-              </ul>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Как продовать и покупать?</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Правила безопастности</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__catergories">
+                        <ul class="footer__box">
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Карта сайта</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Карта регионов</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Карьера в izle</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Обратная связь</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">+99890 123-45-67</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__second">
+                    <a class="footer__apple" href="#">
+                        <img src="./images/src/appleapp.png" alt="" />
+                    </a>
+                    <a class="footer__android" href="#">
+                        <img src="./images/src/googleapp.png" alt="" />
+                    </a>
+                </div>
+                <div class="footer__social">
+                    <a class="footer__social__link" href="#">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    <a class="footer__social__link" href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="footer__social__link" href="#">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                    <a class="footer__social__link" href="#">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+                <div class="footer__make">
+                    <p>Ⓒ Copyright 2021 | Разработана в IT maker</p>
+                </div>
             </div>
-            <div class="footer__catergories">
-              <ul class="footer__box">
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Карта сайта</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Карта регионов</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Карьера в izle</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Обратная связь</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#">+99890 123-45-67</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer__second">
-            <a class="footer__apple" href="#">
-              <img src="./images/src/appleapp.png" alt="" />
-            </a>
-            <a class="footer__android" href="#">
-              <img src="./images/src/googleapp.png" alt="" />
-            </a>
-          </div>
-          <div class="footer__social">
-            <a class="footer__social__link" href="#">
-              <i class="fab fa-vk"></i>
-            </a>
-            <a class="footer__social__link" href="#">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a class="footer__social__link" href="#">
-              <i class="fab fa-telegram-plane"></i>
-            </a>
-            <a class="footer__social__link" href="#">
-              <i class="fab fa-tiktok"></i>
-            </a>
-          </div>
-          <div class="footer__make">
-            <p>Ⓒ Copyright 2021 | Разработана в IT maker</p>
-          </div>
         </div>
-      </div>
     </div>
     <!-- Подключаем скрипты проекта -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
     <script src="js/app.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-  </body>
+</body>
+
 </html>
