@@ -238,15 +238,24 @@
         <div class="wrapper">
           <h4 class="pick__title">Выберите способ оплаты</h4>
           <div class="payment__img">
-            <a href="#">
-              <img src="./images/src/payme.png" alt="" />
-            </a>
-            <a href="#">
-              <img src="./images/src/click.png" alt="" />
-            </a>
-            <a href="#">
-              <img src="./images/src/paynet.png" alt="" />
-            </a>
+            <div key="index" class="radiopay">
+              <input value="first_checkb" id="payme" type="checkbox" />
+              <label for="payme" class="border">
+                <img src="./images/src/payme.png" alt="" />
+              </label>
+            </div>
+            <div key="index" class="radiopay">
+              <input value="first_checkb" id="click" type="checkbox" />
+              <label for="click" class="border">
+                <img src="./images/src/click.png" alt="" />
+              </label>
+            </div>
+            <div key="index" class="radiopay">
+              <input value="first_checkb" id="paynet" type="checkbox" />
+              <label for="paynet" class="border">
+                <img src="./images/src/paynet.png" alt="" />
+              </label>
+            </div>
           </div>
           <div class="payment__button">
             <button class="payment__first">Оплатить</button>

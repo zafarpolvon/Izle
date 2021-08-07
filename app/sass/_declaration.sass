@@ -13,6 +13,8 @@
     min-height: 238px
     @media (max-width: 640px)
       flex-direction: column
+    @media (max-width: 1024px)
+      flex-direction: column
   &__select
     @media (max-width: 640px)
       position: absolute
@@ -29,10 +31,16 @@
       @media (max-width: 640px)
         width: 90%
         height: 100%
+      @media (max-width: 1024px)
+        width: 100%
+        height: 100%
   &__title
     margin-left: -50px
     @media (max-width: 640px)
       margin-left: 0px
+      padding: 0 10px
+    @media (max-width: 1024px)
+      margin-left: 0
       padding: 0 10px
     h5
       font-family: 'Lato', sans-serif
@@ -91,6 +99,9 @@
     align-items: flex-end
     margin-top: 130px
     @media (max-width: 640px)
+      margin-top: -25px
+      margin-bottom: 20px
+    @media (max-width: 1024px)
       margin-top: -25px
       margin-bottom: 20px
     span
@@ -214,6 +225,9 @@
       color: #7F807F
       margin-right: 20px
       text-decoration: none
+      @media (max-width: 1024px)
+        font-size: 18px
+
       &:hover
         text-decoration: underline
         text-decoration-color: #038992
@@ -265,6 +279,9 @@
       @media (max-width: 640px)
         font-size: 16px
         margin-bottom: 20px
+        text-align: justify
+      @media (max-width: 1024px)
+        font-size: 15px
         text-align: justify
     a
       background: #038992

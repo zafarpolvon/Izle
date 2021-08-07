@@ -28,6 +28,9 @@
     @media (max-width: 640px)
       width: 80%
       height: 100%
+    @media (max-width: 1024px)
+      width: 80%
+      height: 100%
 .swiper-container
   margin-left: auto
   margin-right: auto
@@ -87,6 +90,9 @@
     @media (max-width: 640px)
       margin-bottom: 20px
       margin-top: 20px
+    @media (max-width: 1024px)
+      margin-bottom: 0px
+      margin-top: 0px
   &__link
     display: flex
     flex-direction: row
@@ -109,6 +115,12 @@
       margin-bottom: 20px
       @media (max-width: 640px)
         font-size: 14px
+      @media (max-width: 1024px)
+        font-size: 14px
+        margin-top: 20px
+        margin-bottom: 10px
+    @media (max-width: 1024px)
+      margin-top: 0px
   &__title
     font-family: 'Lato', sans-serif
     font-style: normal
@@ -125,6 +137,7 @@
     @media (max-width: 1024px)
       font-size: 20px
       margin-bottom: 0
+      margin-top: 20px
   &__cost
     font-family: 'Lato', sans-serif
     font-style: normal
@@ -154,7 +167,7 @@
     line-height: 28px
     color: #616161
     @media (max-width: 1024px)
-      font-size: 18px
+      font-size: 16px
   &__link
     a
       font-family: 'Lato', sans-serif
@@ -193,6 +206,8 @@
     padding: 6px 0
     @media (max-width: 640px)
       margin-top: 30px
+    @media (max-width: 1024px)
+      margin-top: 20px
 .swiper-button-next 
   background-image: url(../svg/nexta.svg)
   background-repeat: no-repeat
@@ -200,6 +215,8 @@
   background-position: center
   margin-right: 15px
   @media (max-width: 640px)
+    margin-right: -8px
+  @media (max-width: 1024px)
     margin-right: -8px
 .swiper-button-next::after 
   display: none
@@ -210,6 +227,8 @@
   background-position: center
   margin-left: 15px
   @media (max-width: 640px)
+    margin-left: -8px
+  @media (max-width: 1024px)
     margin-left: -8px
 .swiper-button-prev::after 
   display: none
@@ -237,6 +256,9 @@
     text-align: center
     margin-bottom: 20px
     @media (max-width: 640px)
+      font-size: 30px
+      line-height: 25px
+    @media (max-width: 1024px)
       font-size: 30px
       line-height: 25px
 .user
@@ -289,6 +311,8 @@
     img
       @media (max-width: 640px)
         width: 30px
+      @media (max-width: 1024px)
+        width: 30px
   &__number
     display: flex
     align-items: center
@@ -300,6 +324,8 @@
     margin-left: 10px
     @media (max-width: 640px)
       font-size: 18px
+    @media (max-width: 1024px)
+      font-size: 16px
 
   &__send
     display: flex
@@ -312,6 +338,9 @@
     font-size: 18px
     line-height: 22px
     @media (max-width: 640px)
+      padding: 8px 10px
+      font-size: 16px
+    @media (max-width: 1024px)
       padding: 8px 10px
       font-size: 16px
     a
@@ -353,6 +382,8 @@
     @media (max-width: 640px)
       font-size: 30px
       line-height: 30px
+    @media (max-width: 1024px)
+      font-size: 30px
 .location
   text-align: center
   &__name
@@ -373,3 +404,5 @@
     @media (max-width: 640px)
       width: 100%
       margin-bottom: 20px
+    @media (max-width: 1024px)
+      width: 100%

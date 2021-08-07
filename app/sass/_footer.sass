@@ -6,6 +6,10 @@
   background-color: #F6FBF9
   margin-top: 50px
 .footer
+  &__logo
+    img
+      @media (max-width: 1024px)
+        width: 50px
   &__first
     display: flex
     flex-direction: row
@@ -23,6 +27,8 @@
       padding-left: 0
       padding-top: 0px
       margin-bottom: 0px
+    @media (max-width: 1024px)
+      padding-left: 15px
   &__item
     display: flex
     flex-direction: column     
@@ -42,6 +48,8 @@
     &:hover
       color: #038992
       text-decoration: underline
+    @media (max-width: 1024px)
+      font-size: 16px
   &__second
     display: flex
     flex-direction: row

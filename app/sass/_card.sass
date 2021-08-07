@@ -60,7 +60,7 @@
   padding-bottom: 20px
   @media (max-width: 640px)
     width: 48%
-    min-height: 280px
+    min-height: 280px !important
     padding-bottom: 15px
   @media (max-width: 1024px)
     min-height: 430px
@@ -85,6 +85,8 @@
     flex-direction: row
     padding: 0
     padding: 10px 0 
+    @media (max-width: 640px)
+      padding: 5px 0px !important
     @media (max-width: 1024px)
       padding: 5px 20px
     h5
@@ -143,8 +145,9 @@
     @media (max-width: 640px)
       font-size: 14px
       font-weight: 400
-      height: 30px
+      height: 40px
       padding: 3px 2px
+      line-height: 26px
     @media (max-width: 1024px)
       font-size: 16px
       
@@ -195,8 +198,8 @@
       font-size: 16px
       font-weight: 400
       line-height: 18px
-      text-align: left !important
-      margin-bottom: 0
+      text-align: center
+      margin-bottom: 10px !important
     @media (max-width: 1024px)
       font-size: 18px
       margin-bottom: 0
