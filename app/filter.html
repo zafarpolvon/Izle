@@ -15,39 +15,116 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="wrapper">
-            <div class="header__main">
-                <a class="nav__logo" href="index.html">
-                    <img src="./images/src/image_4-removebg-preview 1.png" alt="" />
-                </a>
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a class="nav__link" href="index.html">Главная</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="filter.html">Категории</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="card.html">Тарифы</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="profile.html">Аккаунт</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="nav__last">
-                    <a class="nav__input" href="#">Войти</a>
-                    <select class="nav__select" name="language-picker-select" id="language-picker-select">
-              <option lang="rus" value="ru" selected>RU</option>
-              <option lang="en" value="eng">Eng</option>
-              <option lang="uz" value="uz">UZ</option>
-            </select>
+  <header class="header">
+    <div class="menu__box" id="Menu">
+      <button onclick="closeMenu()" class="menu__close">
+        <i class="fas fa-times"></i>
+      </button>
+      <ul class="menu__ul">
+        <li class="menu__item">
+          <a class="menu__link" href="index.html">Главная</a>
+        </li>
+        <li class="menu__item">
+          <h5>Мой профиль:</h5>
+          <a class="menu__link" href="filter.html">Объявления</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="profile.html">Аккаунт</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="payment.html">Платежи и счет izle</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="setting.html">Настройки</a>
+        </li>
+        <li class="menu__item">
+          <h5>Избранные:</h5>
+          <a class="menu__link" href="chosen.html">Объявления:  12</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="chosenfilter.html">Поиск:  10</a>
+        </li>
+        <li class="menu__item">
+          <select
+            class="nav__select"
+            name="language-picker-select"
+            id="language-picker-select"
+          >
+            <option lang="rus" value="ru" selected>RU</option>
+            <option lang="en" value="eng">Eng</option>
+            <option lang="uz" value="uz">UZ</option>
+          </select>
+        </li>
+      </ul>
+    </div>
+    <div class="wrapper">
+      <div class="header__main">
+        <a class="nav__logo" href="index.html">
+          <img src="./images/src/image_4-removebg-preview 1.png" alt="" />
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="nav__item menu__profile">
+              <a class="nav__link">Профиль</a>
+              <div class="dmenu__box">
+                <div class="dmenu__image">
+                  <img src="./images/src/dropdown.png" alt="" />
+                  <div class="dropdown__info">
+                    <h6>Shohrux Pirnazarov</h6>
+                    <p>ID: 12345678</p>
+                  </div>
                 </div>
-            </div>
+                <div class="dmenu__main">
+                  <h5 class="dmenu__title">Мой профиль:</h5>
+                  <a class="dmenu__link" href="profile.html">Объявления</a>
+                  <a class="dmenu__link" href="product.html">Сообщения</a>
+                  <a class="dmenu__link" href="payment.html"
+                    >Платежи и счет izle</a
+                  >
+                  <a class="dmenu__link" href="settings.html">Настройки</a>
+                  <h5 class="dmenu__title">Избранные:</h5>
+                  <a class="dmenu__link" href="chosen.html"
+                    >Объявления: 12</a
+                  >
+                  <a class="dmenu__link" href="chosenfilter.html"
+                    >Поиск: 10</a
+                  >
+                  <a class="dmenu__title" href="">Выйти</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="create.html">Подать объявления</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav__last">
+          <a href="auth.html" class="nav__input">Войти</a>
+          <a class="nav__saved phone" href="#">
+            <i class="far fa-bookmark"></i>
+            <span class="nav__saved__number">1</span>
+          </a>
+          <button class="menu__open nav__select response" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+          
+          <select
+            class="nav__select phone"
+            name="language-picker-select"
+            id="language-picker-select"
+          >
+            <option lang="rus" value="ru" selected>RU</option>
+            <option lang="en" value="eng">Eng</option>
+            <option lang="uz" value="uz">UZ</option>
+          </select>
         </div>
-    </header>
+        
+    </div>
+    
+  </header>
     <div class="search__filter">
         <div class="wrapper">
             <div class="search__main">

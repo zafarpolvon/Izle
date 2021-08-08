@@ -23,6 +23,47 @@
   <body>
     <div class="profile">
       <header class="header">
+        <div class="menu__box" id="Menu">
+          <button onclick="closeMenu()" class="menu__close">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__ul">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">Главная</a>
+            </li>
+            <li class="menu__item">
+              <h5>Мой профиль:</h5>
+              <a class="menu__link" href="filter.html">Объявления</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="profile.html">Аккаунт</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="payment.html">Платежи и счет izle</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="setting.html">Настройки</a>
+            </li>
+            <li class="menu__item">
+              <h5>Избранные:</h5>
+              <a class="menu__link" href="chosen.html">Объявления:  12</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="chosenfilter.html">Поиск:  10</a>
+            </li>
+            <li class="menu__item">
+              <select
+                class="nav__select"
+                name="language-picker-select"
+                id="language-picker-select"
+              >
+                <option lang="rus" value="ru" selected>RU</option>
+                <option lang="en" value="eng">Eng</option>
+                <option lang="uz" value="uz">UZ</option>
+              </select>
+            </li>
+          </ul>
+        </div>
         <div class="wrapper">
           <div class="header__main">
             <a class="nav__logo" href="index.html">
@@ -52,8 +93,12 @@
                       >
                       <a class="dmenu__link" href="settings.html">Настройки</a>
                       <h5 class="dmenu__title">Избранные:</h5>
-                      <a class="dmenu__link" href="card.html">Объявления: 12</a>
-                      <a class="dmenu__link" href="">Поиск: 10</a>
+                      <a class="dmenu__link" href="chosen.html"
+                        >Объявления: 12</a
+                      >
+                      <a class="dmenu__link" href="chosenfilter.html"
+                        >Поиск: 10</a
+                      >
                       <a class="dmenu__title" href="">Выйти</a>
                     </div>
                   </div>
@@ -68,102 +113,107 @@
                 <i class="far fa-bell"></i>
                 <span class="nav__saved__number">1</span>
               </a>
-              <a class="nav__saved" href="#">
+              <a class="nav__saved phone" href="#">
                 <i class="far fa-bookmark"></i>
                 <span class="nav__saved__number">1</span>
               </a>
-              <div class="dropdown__box" id="dropdown">
-                <h5 class="dropdown__title">Сообщения</h5>
-                <ul class="dropdown__ul">
-                  <li class="dropdown__item">
-                    <a class="dropdown__link" href="#">
-                      <div class="dropdown__image">
-                        <span class="nav__saved__dropdown">2</span>
-                        <img src="./images/src/dropdown.png" alt="" />
-                        <div class="dropdown__info">
-                          <h6>Shohrux Pirnazarov</h6>
+              <button class="menu__open nav__select response" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="dropdown__outside" id="dropdown"style="display: none" >
+                <div class="dropdown__box">
+                  <h5 class="dropdown__title">Сообщения</h5>
+                  <ul class="dropdown__ul">
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">
+                        <div class="dropdown__image">
+                          <span class="nav__saved__dropdown">2</span>
+                          <img src="./images/src/dropdown.png" alt="" />
+                          <div class="dropdown__info">
+                            <h6>Shohrux Pirnazarov</h6>
 
-                          <p>Assolomu aleykum...</p>
+                            <p>Assolomu aleykum...</p>
+                          </div>
                         </div>
+                      </a>
+                      <div class="dropdown__flex">
+                        <span>05.08.2021</span>
+                        <span>17:05</span>
                       </div>
-                    </a>
-                    <div class="dropdown__flex">
-                      <span>05.08.2021</span>
-                      <span>17:05</span>
-                    </div>
-                  </li>
-                  <li class="dropdown__item">
-                    <a class="dropdown__link" href="#">
-                      <div class="dropdown__image">
-                        <span class="nav__saved__dropdown">1</span>
-                        <img src="./images/src/dropdown.png" alt="" />
-                        <div class="dropdown__info">
-                          <h6>Shohrux Pirnazarov</h6>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">
+                        <div class="dropdown__image">
+                          <span class="nav__saved__dropdown">1</span>
+                          <img src="./images/src/dropdown.png" alt="" />
+                          <div class="dropdown__info">
+                            <h6>Shohrux Pirnazarov</h6>
 
-                          <p>Assolomu aleykum...</p>
+                            <p>Assolomu aleykum...</p>
+                          </div>
                         </div>
+                      </a>
+                      <div class="dropdown__flex">
+                        <span>05.08.2021</span>
+                        <span>17:05</span>
                       </div>
-                    </a>
-                    <div class="dropdown__flex">
-                      <span>05.08.2021</span>
-                      <span>17:05</span>
-                    </div>
-                  </li>
-                  <li class="dropdown__item">
-                    <a class="dropdown__link" href="#">
-                      <div class="dropdown__image">
-                        <span class="nav__saved__dropdown">3</span>
-                        <img src="./images/src/dropdown.png" alt="" />
-                        <div class="dropdown__info">
-                          <h6>Shohrux Pirnazarov</h6>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">
+                        <div class="dropdown__image">
+                          <span class="nav__saved__dropdown">3</span>
+                          <img src="./images/src/dropdown.png" alt="" />
+                          <div class="dropdown__info">
+                            <h6>Shohrux Pirnazarov</h6>
 
-                          <p>Assolomu aleykum...</p>
+                            <p>Assolomu aleykum...</p>
+                          </div>
                         </div>
+                      </a>
+                      <div class="dropdown__flex">
+                        <span>05.08.2021</span>
+                        <span>17:05</span>
                       </div>
-                    </a>
-                    <div class="dropdown__flex">
-                      <span>05.08.2021</span>
-                      <span>17:05</span>
-                    </div>
-                  </li>
-                  <li class="dropdown__item">
-                    <a class="dropdown__link" href="#">
-                      <div class="dropdown__image">
-                        <span class="nav__saved__dropdown">1</span>
-                        <img src="./images/src/dropdown.png" alt="" />
-                        <div class="dropdown__info">
-                          <h6>Shohrux Pirnazarov</h6>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">
+                        <div class="dropdown__image">
+                          <span class="nav__saved__dropdown">1</span>
+                          <img src="./images/src/dropdown.png" alt="" />
+                          <div class="dropdown__info">
+                            <h6>Shohrux Pirnazarov</h6>
 
-                          <p>Assolomu aleykum...</p>
+                            <p>Assolomu aleykum...</p>
+                          </div>
                         </div>
+                      </a>
+                      <div class="dropdown__flex">
+                        <span>05.08.2021</span>
+                        <span>17:05</span>
                       </div>
-                    </a>
-                    <div class="dropdown__flex">
-                      <span>05.08.2021</span>
-                      <span>17:05</span>
-                    </div>
-                  </li>
-                  <li class="dropdown__item">
-                    <a class="dropdown__link" href="#">
-                      <div class="dropdown__image">
-                        <span class="nav__saved__dropdown">1</span>
-                        <img src="./images/src/dropdown.png" alt="" />
-                        <div class="dropdown__info">
-                          <h6>Shohrux Pirnazarov</h6>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">
+                        <div class="dropdown__image">
+                          <span class="nav__saved__dropdown">1</span>
+                          <img src="./images/src/dropdown.png" alt="" />
+                          <div class="dropdown__info">
+                            <h6>Shohrux Pirnazarov</h6>
 
-                          <p>Assolomu aleykum...</p>
+                            <p>Assolomu aleykum...</p>
+                          </div>
                         </div>
+                      </a>
+                      <div class="dropdown__flex">
+                        <span>05.08.2021</span>
+                        <span>17:05</span>
                       </div>
-                    </a>
-                    <div class="dropdown__flex">
-                      <span>05.08.2021</span>
-                      <span>17:05</span>
-                    </div>
-                  </li>
-                </ul>
+                    </li>
+                  </ul>
+                </div>
               </div>
               <select
-                class="nav__select"
+                class="nav__select phone"
                 name="language-picker-select"
                 id="language-picker-select"
               >
@@ -172,8 +222,9 @@
                 <option lang="uz" value="uz">UZ</option>
               </select>
             </div>
-          </div>
+            
         </div>
+        
       </header>
       <div class="amount">
         <div class="wrapper">
