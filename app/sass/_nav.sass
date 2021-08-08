@@ -21,7 +21,7 @@
       padding-top: 6px
       margin-right: 15px
     i
-      font-size: 30px
+      font-size: 28px
       color: #038992
   &__saved__number
     position: absolute
@@ -41,8 +41,8 @@
     width: 20px
     height: 20px
     background: #84C7AE
-    margin-left: 48px
-    margin-top: 5px
+    margin-left: 40px
+    margin-top: 0px
     text-align: center
     border-radius: 50%
     color: #fff
@@ -199,6 +199,7 @@
     margin-right: 40px
     @media (max-width: 768px)
       font-size: 16px
+      margin-top: 10px
     
   &__select
     margin-left: 78px
@@ -214,17 +215,19 @@
     @media (max-width: 640px)
       display: flex
       flex-direction: column
+      margin-bottom: 20px
   &__par
     font-family: 'Lato', sans-serif
     font-style: normal
     font-weight: 600
-    font-size: 40px
+    font-size: 34px
     line-height: 58px
     color: #616161
     margin-top: 40px
     @media (max-width: 768px)
       font-size: 22px
       line-height: 40px
+      margin-top: 10px
     h3
       margin: 0
   &__header
@@ -271,6 +274,7 @@
     appearance: none
     @media (max-width: 768px)
       width: 100% !important
+      margin-right: 10px
   &__box
     display: flex
   &__item
@@ -296,11 +300,13 @@
     color: #7F807F
 .first
   width: 254px
+  
 .second
   width: 170px
 .third
   width: 120px
   margin-left: 5px
+
 .sec__select
   display: flex
   flex-direction: row
@@ -402,7 +408,8 @@
 
   &__box
     display: flex
-    flex-direction: row
+    flex-direction: row-reverse
+    justify-content: flex-end
     @media (max-width: 768px)
       flex-direction: column
   &__sort
@@ -466,8 +473,8 @@
 .dmenu
   &__box
     position: absolute
-    width: 320px
-    height: 450px
+    width: 300px
+    min-height: 400px
     background: #FFFFFF
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25)
     border-radius: 10px
@@ -475,6 +482,7 @@
     margin-left: -90px
     margin-top: 35px
     display: none
+    padding-bottom: 10px
   &__main
     display: flex
     flex-direction: column
@@ -483,7 +491,7 @@
     font-family: 'Lato', sans-serif 
     font-style: normal
     font-weight: bold
-    font-size: 24px
+    font-size: 20px
     line-height: 29px
     color: #616161
     text-decoration: none
@@ -494,7 +502,7 @@
     font-family: 'Lato', sans-serif 
     font-style: normal
     font-weight: 500
-    font-size: 20px
+    font-size: 18px
     line-height: 24px
     color: #616161
     text-decoration: none
@@ -525,6 +533,9 @@
       color: #616161
       margin-bottom: 0
       margin-top: 0px
+    img
+      width: 50px
+      height: 50px
 
 .dropdown
   &__outside
@@ -552,10 +563,7 @@
       margin-left: auto
       margin-right: auto
       width: 95%
-      
       text-align: center
-
-    
   &__title
     font-family: 'Lato', sans-serif 
     font-style: normal
@@ -590,12 +598,13 @@
     display: flex
     flex-direction: row
     justify-content: space-between
-    margin-top: 10px
+    margin-top: 15px
   &__image
     display: flex
     flex-direction: row
     img
-      width: 60px
+      width: 50px
+      height: 50px
       @media (max-width: 768px)
         width: 50px
         height: auto
@@ -610,13 +619,13 @@
     flex-direction: column
     align-items: center 
     margin-right: 20px
-    margin-top: 15px
+    margin-top: 0px
     span
       padding-top: -20px
       font-family: 'Lato', sans-serif 
       font-style: normal
       font-weight: 600
-      font-size: 14px
+      font-size: 12px
       line-height: 24px
       color: #616161
       margin-bottom: 0
@@ -628,16 +637,16 @@
       font-family: 'Lato', sans-serif 
       font-style: normal
       font-weight: 600
-      font-size: 20px
+      font-size: 18px
       line-height: 29px
       color: #000000
       margin-bottom: 0
-      margin-top: 10px
+      margin-top: 0px
     p
       font-family: 'Lato', sans-serif 
       font-style: normal
       font-weight: 600
-      font-size: 16px
+      font-size: 14px
       line-height: 24px
       color: #616161
       margin-bottom: 0
@@ -652,3 +661,9 @@
   text-decoration: underline
 #myDIV
   display: none
+.booxxx
+  margin-bottom: 20px
+  display: flex
+  flex-direction: row
+  @media (max-width: 768px)
+    flex-direction: column
