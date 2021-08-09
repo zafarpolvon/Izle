@@ -469,18 +469,19 @@
               <div class="settings__flex">      
                 <label for="file-input" class="photo__label"
                   >
-                    <img class="settings__fancy" src="./images/src/image.png" alt="" />
+                    <img class="settings__fancy " id="output" src="./images/src/image.png" alt="" />
                   </label>
-                <input type="file" id="file-input" class="photo__input" />
+                <input onchange="loadFile(event)" id="file-input" accept="image/*" type="file" class="photo__input imgInp" />
                 <p>Рекомендованный размер лого: 200x200px</p>
+                
               </div>
               <h5>Логотип</h5>
               <div class="settings__flex">
-                <label for="file-input" class="photo__label"
+                <label for="file-input2" class="photo__label"
                   >
-                    <img class="settings__fancy" src="./images/src/image.png" alt="" />
+                    <img class="settings__fancy " id="output1" src="./images/src/image.png" alt="" />
                   </label>
-                <input type="file" id="file-input" class="photo__input" />
+                <input onchange="loadFile2(event)" id="file-input2" accept="image/*" type="file" class="photo__input imgInp" />
                 <p>
                   Загрузите файл не менее 1366x210 пикселей. Вы так же можте
                   загрузить фото большого размера и отредактировать его.

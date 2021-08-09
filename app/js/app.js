@@ -1,3 +1,52 @@
+var loadFile = function (event) {
+  var output = document.getElementById("output");
+  output.src = URL.createObjectURL(event.target.files[0]);
+  console.log(output.src);
+  output.onload = function () {
+    URL.revokeObjectURL(output.src);
+  };
+};
+var loadFile2 = function (event) {
+  var output = document.getElementById("output1");
+  output.src = URL.createObjectURL(event.target.files[0]);
+  output.onload = function () {
+    URL.revokeObjectURL(output.src);
+  };
+};
+var output1 = document.getElementById("image1");
+var output2 = document.getElementById("image2");
+var output3 = document.getElementById("image3");
+var output4 = document.getElementById("image4");
+var output5 = document.getElementById("image5");
+var output6 = document.getElementById("image6");
+var output7 = document.getElementById("image7");
+var photo1 = {};
+var loadImage = function (event) {
+  console.log(event.target.files[0]);
+  console.log(event.target.files[1]);
+
+  if (output1.src.length > 3) {
+    output1.src = URL.createObjectURL(event.target.files[0]);
+    photo1 = output1.src;
+    console.log(photo1);
+  } else if (output1.src.length > 3) {
+    output1.src = URL.createObjectURL(event.target.files[0]);
+  }
+
+  // if (output1.src) {
+  //   output2.onload = function () {
+  //     URL.revokeObjectURL(output.src);
+  //   };
+  // } else if (output2.src) {
+  //   output3.onload = function () {
+  //     URL.revokeObjectURL(output.src);
+  //   };
+  // } else if (output3.src) {
+  //   output4.onload = function () {
+  //     URL.revokeObjectURL(output.src);
+  //   };
+  // }
+};
 function myFunction() {
   var x = document.getElementById("myDIV");
   if (x.style.display === "none") {
