@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+
+    <!-- Подключаем стили проекта -->
+    <link rel="stylesheet" href="css/app.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="profile">
+      <header class="header">
+        <div class="menu__box" id="Menu">
+          <button onclick="closeMenu()" class="menu__close">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__ul">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">Главная</a>
+            </li>
+            <li class="menu__item">
+              <h5>Мой профиль:</h5>
+              <a class="menu__link" href="filter.html">Объявления</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="profile.html">Аккаунт</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="payment.html">Платежи и счет izle</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="setting.html">Настройки</a>
+            </li>
+            <li class="menu__item">
+              <h5>Избранные:</h5>
+              <a class="menu__link" href="chosen.html">Объявления:  12</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="chosenfilter.html">Поиск:  10</a>
+            </li>
+            <li class="menu__item">
+              <select
+                class="nav__select"
+                name="language-picker-select"
+                id="language-picker-select"
+              >
+                <option lang="rus" value="ru" selected>RU</option>
+                <option lang="en" value="eng">Eng</option>
+                <option lang="uz" value="uz">UZ</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+        <div class="wrapper">
+          <div class="header__main">
+            <a class="nav__logo" href="index.html">
+              <img src="./images/src/image_4-removebg-preview 1.png" alt="" />
+            </a>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="nav__item menu__profile">
+                  <a class="nav__link">Профиль</a>
+                  <div class="dmenu__box">
+                    <div class="dmenu__image">
+                      <img src="./images/src/dropdown.png" alt="" />
+                      <div class="dropdown__info">
+                        <h6>Shohrux Pirnazarov</h6>
+                        <p>ID: 12345678</p>
+                      </div>
+                    </div>
+                    <div class="dmenu__main">
+                      <h5 class="dmenu__title">Мой профиль:</h5>
+                      <a class="dmenu__link" href="profile.html">Объявления</a>
+                      <a class="dmenu__link" href="product.html">Сообщения</a>
+                      <a class="dmenu__link" href="payment.html"
+                        >Платежи и счет izle</a
+                      >
+                      <a class="dmenu__link" href="settings.html">Настройки</a>
+                      <h5 class="dmenu__title">Избранные:</h5>
+                      <a class="dmenu__link" href="chosen.html"
+                        >Объявления: 12</a
+                      >
+                      <a class="dmenu__link" href="chosenfilter.html"
+                        >Поиск: 10</a
+                      >
+                      <a class="dmenu__title" href="">Выйти</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="create.html">Подать объявления</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="nav__last">
+              <a onclick="dropdownFunction()" class="nav__saved">
+                <i class="far fa-bell"></i>
+                <span class="nav__saved__number">1</span>
+              </a>
+              <a class="nav__saved phone" href="#">
+                <i class="far fa-bookmark"></i>
+                <span class="nav__saved__number">1</span>
+              </a>
+              <button class="menu__open nav__select response" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="dropdown__outside" id="dropdown"style="display: none" >
+                <div class="dropdown__box">
+                  <h5 class="dropdown__title">Сообщения</h5>
+                  <ul class="dropdown__ul">
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">
+                        <div class="dropdown__image">
+                          <span class="nav__saved__dropdown">2</span>
+                          <img src="./images/src/dropdown.png" alt="" />
+                          <div class="dropdown__info">
+                            <h6>Shohrux Pirnazarov</h6>
+
+                            <p>Assolomu aleykum...</p>
+                          </div>
+                        </div>
+                      </a>
+                      <div class="dropdown__flex">
+                        <span>05.08.2021</span>
+                        <span>17:05</span>
+                      </div>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">
+                        <div class="dropdown__image">
+                          <span class="nav__saved__dropdown">1</span>
+                          <img src="./images/src/dropdown.png" alt="" />
+                          <div class="dropdown__info">
+                            <h6>Shohrux Pirnazarov</h6>
+
+                            <p>Assolomu aleykum...</p>
+                          </div>
+                        </div>
+                      </a>
+                      <div class="dropdown__flex">
+                        <span>05.08.2021</span>
+                        <span>17:05</span>
+                      </div>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">
+                        <div class="dropdown__image">
+                          <span class="nav__saved__dropdown">3</span>
+                          <img src="./images/src/dropdown.png" alt="" />
+                          <div class="dropdown__info">
+                            <h6>Shohrux Pirnazarov</h6>
+
+                            <p>Assolomu aleykum...</p>
+                          </div>
+                        </div>
+                      </a>
+                      <div class="dropdown__flex">
+                        <span>05.08.2021</span>
+                        <span>17:05</span>
+                      </div>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">
+                        <div class="dropdown__image">
+                          <span class="nav__saved__dropdown">1</span>
+                          <img src="./images/src/dropdown.png" alt="" />
+                          <div class="dropdown__info">
+                            <h6>Shohrux Pirnazarov</h6>
+
+                            <p>Assolomu aleykum...</p>
+                          </div>
+                        </div>
+                      </a>
+                      <div class="dropdown__flex">
+                        <span>05.08.2021</span>
+                        <span>17:05</span>
+                      </div>
+                    </li>
+                    <li class="dropdown__item">
+                      <a class="dropdown__link" href="#">
+                        <div class="dropdown__image">
+                          <span class="nav__saved__dropdown">1</span>
+                          <img src="./images/src/dropdown.png" alt="" />
+                          <div class="dropdown__info">
+                            <h6>Shohrux Pirnazarov</h6>
+
+                            <p>Assolomu aleykum...</p>
+                          </div>
+                        </div>
+                      </a>
+                      <div class="dropdown__flex">
+                        <span>05.08.2021</span>
+                        <span>17:05</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <select
+                class="nav__select phone"
+                name="language-picker-select"
+                id="language-picker-select"
+              >
+                <option lang="rus" value="ru" selected>RU</option>
+                <option lang="en" value="eng">Eng</option>
+                <option lang="uz" value="uz">UZ</option>
+              </select>
+            </div>
+            
+        </div>
+        
+      </header>
+      <div class="amount">
+        <div class="wrapper">
+          <div class="amount__box">
+            <div class="amount__info">
+              <img src="./svg/wallet.svg" alt="" />
+              <h5>Ваш счет: 123 000 сум</h5>
+            </div>
+            <div class="amount__link">
+              <a href="tarif.html">Пополнить счет</a>
+            </div>
+          </div>
+          <div class="filter">
+            <div class="filter__par">
+              <h3>Объявления</h3>
+            </div>
+            <div class="filter__header">
+              <a class="filter__link" href="profile.html">Объявления</a>
+              <a class="filter__link" href="message.html">Сообщения</a>
+              <a class="filter__link" href="payment.html"
+                >Платежи и счет izle</a
+              >
+              <a class="filter__link" href="settings.html">Настройки</a>
+              <a class="filter__link on" href="#">Мой бизнес</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="business">
+        <div class="wrapper">
+          <div class="business__categories">
+            <a class="business__categories__active" href="business.html">Заказные пакеты</a>
+            <a class="business__categories__link" href="businesssettings.html">Настройки бизнес страниц</a>
+          </div>
+          <div class="business__box">
+            <h5>Редактировать страницу на izle</h5>
+          </div>
+        </div>
+      </div>
+      <div class="page">
+        <div class="wrapper">
+          <div class="page__box">
+            <div class="page__left">
+              <div class="page__item">
+                <h5>Логотип</h5>
+                <p>Рекомендованный размер лого: 200x200px</p>
+                <label for="file-input" class="photo__label"
+                  >
+                    <img class="settings__fancy img__center" id="output" src="./images/src/addphoto.png" alt="" />
+                  </label>
+                <input onchange="loadFile(event)" id="file-input" accept="image/*" type="file" class="photo__input imgInp" />
+              </div>
+              <div class="page__item">
+                <h5>Баннер</h5>
+                <p>Загрузите фото не менее 1336x210 px. Вы так же можете загрузить фото большого размера и отредактировать его.</p>
+                <label for="file-input" class="photo__label"
+                  >
+                    <img class="settings__fancy img__center" id="output" src="./images/src/addphoto.png" alt="" />
+                  </label>
+                <input onchange="loadFile(event)" id="file-input" accept="image/*" type="file" class="photo__input imgInp" />
+              </div>
+            </div>
+            <div class="page__right">
+              <div class="settings__regu">
+                <span class="settings__green">
+                  <h5>Ваше лого будет размещаться:</h5>
+                </span>
+                <ul class="product__danger__box">
+                  <li>на бизнес-странице izle (если она у вас есть)</li>
+                  <li>
+                    Не торопитесь разглашать свои личные контактные данные,
+                    постарайтесь решить все вопросы в чате OLX.
+                  </li>
+                  <li>
+                    на странице объявления (если вы заказали услугу размещения
+                    лого в вакансиях или у вас есть активный пакет объявлений)
+                  </li>
+                  <li>
+                    в результатах поиска вакансий (если вы заказали такую услугу
+                    или у вас есть пакет объявлений Премиум в разделе "Работа")
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="page__input">
+            <div class="page__input1">
+              <h6>Форма добавление поддомена*</h6>
+              <div class="page__flex">
+                <input type="text">
+                <span>.izle.uz</span>
+              </div>
+            </div>
+            <div class="page__input1">
+              <h6>Укажите название компании*</h6>
+              <input type="text" placeholder="izle">
+            </div>
+          </div>
+          <div class="page__textarea">
+            <div class="page__input1">
+              <h6>Описание копании*</h6>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+          <div class="page__number">
+            <h5>Адрес*</h5>
+            <div class="page__input2">
+              <div>
+                <input class="page__text1" type="text" placeholder="Улица">
+                <input class="page__text2" type="text" placeholder="Номер здания">
+              </div>
+              <div>
+                <input class="page__text3" type="text" placeholder="Индекс">
+                <input class="page__text4" type="text" placeholder="Город">
+              </div>
+            </div>
+          </div>
+          <div class="page__phone">
+            <h5>Номер телефона</h5>
+            <div class="page__input3">
+              <input class="page__text1" type="text" >
+              <span>Добавить еще (максимум 3 номера)</span>
+            </div>
+          </div>
+          <div class="page__phone">
+            <h5>Внешний www</h5>
+            <div class="page__input3">
+              <input class="page__text1" type="text" >
+              <span>внешний интернет адрес вашей компании</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="back__footer">
+        <div class="wrapper">
+          <div class="footer__first">
+            <div class="footer__logo">
+              <img src="./images/src/image_4-removebg-preview 1.png" alt="" />
+            </div>
+            <div class="footer__catergories">
+              <ul class="footer__box">
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Мобильное приложения</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Помощь</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Платные услуги</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Бизнес на izle</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Реклама на сайте</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__catergories">
+              <ul class="footer__box">
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Условия использования</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#"
+                    >Политика конфиденциальности</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Партнеры</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Как продовать и покупать?</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Правила безопастности</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__catergories">
+              <ul class="footer__box">
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Карта сайта</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Карта регионов</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Карьера в izle</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Обратная связь</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">+99890 123-45-67</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__second">
+            <a class="footer__apple" href="#">
+              <img src="./images/src/appleapp.png" alt="" />
+            </a>
+            <a class="footer__android" href="#">
+              <img src="./images/src/googleapp.png" alt="" />
+            </a>
+          </div>
+          <div class="footer__social">
+            <a class="footer__social__link" href="#">
+              <i class="fab fa-vk"></i>
+            </a>
+            <a class="footer__social__link" href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a class="footer__social__link" href="#">
+              <i class="fab fa-telegram-plane"></i>
+            </a>
+            <a class="footer__social__link" href="#">
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+          <div class="footer__make">
+            <p>Ⓒ Copyright 2021 | Разработана в IT maker</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Подключаем скрипты проекта -->
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
