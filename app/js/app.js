@@ -77,6 +77,55 @@ function dropdownFunction() {
     x.style.display = "none";
   }
 }
+function modal1() {
+  var x = document.getElementById("modal1");
+  x.style.display = "block";
+}
+function modal2() {
+  var x = document.getElementById("modal2");
+
+  x.style.display = "block";
+}
+function modal3() {
+  var x = document.getElementById("modal3");
+
+  x.style.display = "block";
+}
+function cancel1() {
+  var x = document.getElementById("modal1");
+  x.style.display = "none";
+}
+function cancel2() {
+  var x = document.getElementById("modal2");
+
+  x.style.display = "none";
+}
+function cancel3() {
+  var x = document.getElementById("modal3");
+
+  x.style.display = "none";
+}
+var images_modal1 = document.getElementById("modal1");
+var images_modal2 = document.getElementById("modal2");
+var images_modal3 = document.getElementById("modal3");
+
+// When the user clicks anywhere outside of the modal, close it
+
+window.addEventListener("click", function (event) {
+  if (event.target == images_modal1) {
+    images_modal1.style.display = "none";
+  }
+});
+window.addEventListener("click", function (event) {
+  if (event.target == images_modal2) {
+    images_modal2.style.display = "none";
+  }
+});
+window.addEventListener("click", function (event) {
+  if (event.target == images_modal3) {
+    images_modal3.style.display = "none";
+  }
+});
 var images_modal = document.getElementById("dropdown");
 // When the user clicks anywhere outside of the modal, close it
 
