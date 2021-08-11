@@ -68,7 +68,8 @@
     margin: 0 20px
     display: flex
     flex-direction: column
-    padding: 0 30px
+    padding: 0 30px 15px 30px
+    justify-content: space-between
     @media (max-width: 640px)
       width: 100%
       margin: 0
@@ -106,8 +107,11 @@
     display: flex
     flex-direction: row
     justify-content: space-between
-    margin-top: 20px
+    margin-top: auto
     align-items: flex-end
+    align-content: flex-end
+    justify-items: flex-end
+    
     h6
       font-family: 'Lato', sans-serif
       font-style: normal
@@ -153,7 +157,7 @@
     font-family: 'Lato', sans-serif
     font-style: normal
     font-weight: 800
-    font-size: 36px
+    font-size: 30px
     line-height: 58px
     text-align: center
     color: #616161
@@ -174,7 +178,7 @@
     font-family: 'Lato', sans-serif
     font-style: normal
     font-weight: 600
-    font-size: 20px
+    font-size: 16px
     line-height: 28px
     color: #616161
     @media (max-width: 1024px)
@@ -263,7 +267,7 @@
     font-family: 'Lato', sans-serif
     font-style: normal
     font-weight: 600
-    font-size: 36px
+    font-size: 30px
     line-height: 43px
     color: #616161
     margin-top: 30px
@@ -387,7 +391,7 @@
     font-family: 'Lato', sans-serif
     font-style: normal
     font-weight: 600
-    font-size: 36px
+    font-size: 30px
     line-height: 43px
     color: #616161
     margin-top: 30px
@@ -494,3 +498,10 @@
       border: 2px solid #038992
       background: #038992
       color: #fff
+#map 
+  height: 380px
+  margin-top: 20px
+  /* The height is 400 pixels */
+  width: 100%
+  border-radius: 10px
+  /* The width is the width of the web page */
