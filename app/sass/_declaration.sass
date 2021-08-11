@@ -127,8 +127,10 @@
   &__up
     display: flex
     justify-content: center
+    margin-bottom: 30px
     @media (max-width: 640px)
       justify-content: space-between
+      margin-bottom: 30px
     a
       font-family: 'Lato', sans-serif 
       font-style: normal
@@ -166,7 +168,7 @@
   padding-top: 20px
 .amount
   background: #fff
-  padding-bottom: 40px
+  padding-bottom: 20px
 .active
   display: flex
   flex-direction: row
@@ -200,6 +202,8 @@
   &__search
     display: flex
     align-items: center
+    @media (max-width: 1024px)
+      width: 100%
     button
       width: 80px
       height: 50px
@@ -213,6 +217,8 @@
       border-radius: 6px
       border: none
       margin-left: 5px
+      @media (max-width: 1024px)
+        width: 20%
         
   &__status
     display: flex
@@ -242,6 +248,8 @@
     background: #FFFFFF
     border-radius: 6px
     padding-left: 5px
+    @media (max-width: 1024px)
+      width: 80%
     img
       width: 30px
     input
@@ -265,7 +273,7 @@
     padding: 10px 30px
     margin-top: 40px
     @media (max-width: 640px)
-      flex-direction: column
+      flex-direction: row
       padding: 10px 10px
     h5
       font-family: 'Lato', sans-serif
@@ -278,9 +286,11 @@
       display: flex
       align-items: center
       @media (max-width: 640px)
-        font-size: 16px
-        margin-bottom: 20px
-        text-align: justify
+        font-size: 14px
+        margin-bottom: 3px
+        text-align: left
+        margin-right: 10px
+        line-height: 20px
       @media (max-width: 1024px)
         font-size: 15px
         text-align: justify
@@ -295,10 +305,12 @@
       padding: 5px 20px
       text-decoration: none
       @media (max-width: 640px)
-        width: 100px
+        width: auto
         text-align: center
         padding: 3px 5px
         margin: 0 auto
+        display: inline-block
+        height: 40px
 .checkbox__main
   display: flex
   padding-left: 0
@@ -355,7 +367,7 @@
     content: ''
     position: absolute
     left: 10px
-    top: 14px
+    top: 15px
     background: white
     width: 4px
     height: 4px
